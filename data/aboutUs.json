@@ -1,0 +1,167 @@
+{
+  "banner": {
+    "id": "b_001",
+    "title": "",
+    "image": "./images/aboutUs/banner.jpg"
+  },
+  "currPosition": {
+    "en": "Current Position : home > About CAE > Company Profile",
+    "cn": "当前位置 : 首页 > 关于我们 > 公司简介"
+  },
+  "aboutUsList": [
+    {
+      "id": "us_001",
+      "theme": {
+        "en": "About CAE",
+        "cn": "北美文化艺术交流协会"
+      },
+      "image": "./images/aboutUs/aboutCAE.jpg",
+      "content": {
+        "en": "Culture and Art Exchange Association of North America is a registered non-profit organization based in Toronto Canada. Our mission is to organize film, arts and educational events to promote cultural exchanges and cultural industry interaction between China and North America.",
+        "cn": "北美文化艺术交流协会是加拿大注册的非营利组织。通过策划组织电影、艺术会议展览以及相关教育活动，致力于促进中国与北美之间的文化艺术产业互动和相关文化交流。"
+      }
+    },
+    {
+      "id": "us_002",
+      "theme": {
+        "en": "Our Mission",
+        "cn": "我们的宗旨"
+      },
+      "image": "./images/aboutUs/mission.jpg",
+      "content": {
+        "en": "The Association is established to advocate international communication and collaboration between culture and arts professionals in China and North America to respond to the trend of globalization in creative and culture industries. We hope that through open conversations, professionals with different backgrounds will better understand each other and their own cultural characteristics, from which meaningful interaction might occur. We believe that creativity is the most robust power in contemporary world, and we are committed to becoming an internationally recognized advocate of exchanges in culture and arts.",
+        "cn": "本协会是在全球化视角之下为中国和北美的文化艺术从业者建立的交流合作平台。我们希望通过开放的对话增进两地专业人士对彼此和自身文化特质的理解，并且增进多元文化之间的融合与互动。我们相信创造力是当代社会最高的价值生产力，而我们也致力于成为国际公认的文化艺术交流的支持者和先行者。"
+      }
+    }
+  ],
+  "ourTeamList": [
+    {
+      "id": "mp_001",
+      "name": {
+        "en": "Lisa Lin",
+        "cn": "Lisa Lin"
+      },
+      "image": "./images/aboutUs/team-1.jpg",
+      "position": {
+        "en": "President",
+        "cn": "会长"
+      },
+      "detail": {
+        "en": "Lisa Lin was previously a senior producer of Chinese TV station. She has working experiences in the industry for over 20 years. With professional knowledge and experiences in film and TV production, she is familiar with the diverse resources available in China. Lisa also has solid connections with the professionals and has established a good reputation in the industry - her expertise in video production is endorsed by her peers.\n“Gathering people with the same passion in creativity is our major vision for this association. This platform is created for Chinese and North American professionals in creative and culture industry to share their love and understanding of culture and art. We believe good work deserves public recognition.”",
+        "cn": "Lisa lin曾任中国中央电视台经济频道编导、北京电视台栏目制片人。在20余年的工作经历中积累了丰富的行业资源，建立了良好声誉；其在专业影视制作技术方面以及大型活动的组织统筹经验为业界普遍认可。\n“我们建立北美文化艺术交流协会的初衷是为聚集同道中人，通过这一互动平台让中国和北美同行交流分享彼此对于文化艺术的热爱和理解，展示和分享各自的作品与成果。”"
+      }
+    },
+    {
+      "id": "mp_002",
+      "name": {
+        "en": "Shel Sun",
+        "cn": "孙小晴"
+      },
+      "image": "./images/aboutUs/team-2.jpg",
+      "position": {
+        "en": "Executive Director",
+        "cn": "执行总监"
+      },
+      "detail": {
+        "en": "Shel graduated from Textile Academy of London, Post-graduated program at Ryerson University in Design, University of Toronto master’s degree in the Center of Drama, Theatre and Performance Studies. She is an award-winning artist, her prominent work Contrapposto win A Design Award in Italy, 2014. As an advocate of Asian film & drama, she is responsible for industry and partnership for Mulan International Film Festivals in Canada. Her goal is to bridge diverse cultures and arts between Canada and China. With years of NOP organization environment experience and a firm belief in practice-led approach, Shel endeavours to explore how technology and integrated disciplines can lead the progress in the art industry, to connect the artist and audience, and to accelerate the culture exchange.",
+        "cn": "孙小晴本科毕业于伦敦纺织设计学院，并在怀尔逊大学设计系、多伦多大学戏剧和表演研究中心获得研究生学位。她的杰出作品《Contrapposto》在2014年荣获意大利红A设计奖。作为亚洲电影和戏剧的倡导者，她负责加拿大木兰国际电影节的产业关系，多次在多伦多举办艺术类大型活动。她期望通过实践来建立加拿大和中国之间多元文化和艺术的桥梁，并致力于对新型产业与各学科间的探索来引领艺术产业多向发展，让艺术家及其作品与更多观众深入互动来促进多元文化的交流。"
+      }
+    },
+    {
+      "id": "mp_003",
+      "name": {
+        "en": "Liu young",
+        "cn": "杨柳青青"
+      },
+      "image": "./images/aboutUs/team-3.jpg",
+      "position": {
+        "en": "Event Manager",
+        "cn": "活动经理"
+      },
+      "detail": {
+        "en": "Liu yang  With a BA in Chinese Literature from Peking University and a MA in Museum Studies from University of Toronto, Liu Young has cultivated her interests in arts and culture in both Beijing and Toronto. She is fascinated by the intersection between contemporary art and science and has experiences in gallery operation, event coordination and writing. She was involved in documentary series Charm of China and Exploring. She is a part-time translator for Lonely Planet.",
+        "cn": "杨柳青青，本科毕业于北京大学中文系，获得多伦多大学博物馆系硕士学位；在观察比照和亲身经历中逐渐对中西文化形成清晰的认知。热衷于人文、当代艺术和科学技术等多领域的跨界求索，拥有多伦多艺术画廊运营和艺术活动策划的娴熟经验；参与中国少数民族非遗文化纪录片《风情中国》和《探索发现》频道考古节目的调研和脚本创作，同时担任《孤独星球》旅游手册的译者。"
+      }
+    },
+    {
+      "id": "mp_004",
+      "name": {
+        "en": "Jason Cipparrone",
+        "cn": "Jason Cipparrone"
+      },
+      "image": "./images/aboutUs/team-5.jpg",
+      "position": {
+        "en": "Artistic Advisor",
+        "cn": "艺术指导"
+      },
+      "detail": {
+        "en": "Jason Cipparrone is a Toronto-based photographer, director, producer and artistic advisor who has spent the last decade developing his approach to photography and film production. Spending years apprenticing under Canada's top photographers, Jason honed his aesthetic approach to image creation as well his approach to producing both photography and film. His approach has been sought after by a large range of clientele - from independent musicians, boutique record labels, to corporate portraiture and ad agencies. Jason thoroughly enjoys working with creative personalities who are more interested in achieving a level of emotional depth and honesty in their work. With a background in music himself, Jason is able to provide through his knowledge from experience an attention to detail that might be lost otherwise.",
+        "cn": "Jason Cipparrone 加拿大多伦多著名摄影师、导演、制片和艺术顾问，\n在过去十年他一直尝试开创摄影和电影制作方式。\nJason师从加拿大顶尖摄影师，花了数年时间磨练在图像创作的美学，\n及摄影和电影的创新拍摄。\n他的作品受到独立音乐家、唱片公司，企业肖像和广告公司客户的认同。\nJason喜欢与富有创造力个性的伙伴合作，他们更感兴趣的是在工作中达到诚实和情感深度。\n同时拥有音乐资历背景的他，通过丰富经验在拍摄中始终对可能丢失的细节提供关注。"
+      }
+    },
+    {
+      "id": "mp_005",
+      "name": {
+        "en": "Weizhong chen",
+        "cn": "Weizhong chen"
+      },
+      "image": "./images/aboutUs/team-7.jpg",
+      "position": {
+        "en": "Consultant",
+        "cn": "顾问"
+      },
+      "detail": {
+        "en": "Mr. Chen Weizhong is a well recognized film and television producer, planner and distributor.\nMr. Chen Weizhong produced and distributed many well-known films and TV series such as Devils on the Doorstep, Hero, House of Flying Daggers, The Promis, Curse of the Golden Flower, Dangerous Liaisons,  Come and Go, I accidentally fall in love with you,  Final Court.\nIn 2015, he became vice executive president of Zhejiang Tianyi Film & Television Co., Ltd, a subsidiary of Lugang Culture (stock code: 601599), and oversaw the corporate regrouping. The market value of the corporate exceeded 23 billion after the reconstruction. In 2018, he founded Beijing All-one Internet Technology Co., Ltd. and the company developed the mobile app “Mockbird”.",
+        "cn": "中国著名影视出品人、制片人、监制、策划人、发行人。\n制作、出品、发行了许多优秀影视剧作品，如：《鬼子来了》、《英雄》、《十面埋伏》、《无极》、《满城尽带黄金甲》、《危险关系》、《来来往往》、《一不小心爱上你》、《决胜法庭》等。\n2015年加入鹿港文化（股票代码：601599）下属子公司-浙江天意影视有限公司，常务副总裁，协助公司重组后市值突破230亿。2018年创建北京亿品众合互联网科技有限公司，开发影视行业专业APP“嘲鸟”。"
+      }
+    },
+    {
+      "id": "mp_006",
+      "name": {
+        "en": "Jin zuo",
+        "cn": "左晋"
+      },
+      "image": "./images/aboutUs/team-8.jpg",
+      "position": {
+        "en": "",
+        "cn": ""
+      },
+      "detail": {
+        "en": "Mr Zuo is a well-known Chinese artist specialized in oil and acrylic painting. He is the co-founder of C9 Art Gallery, the President of Canadian Chinese Art Association, the Vice President and Director of Oil Painting Department of China Zen Art Ltd. Mr. Zuo is a member of Art Committee of the Belt and Road Initiative in China and was selected by the Canadian federal government as the China-Canada Cultural Ambassador. He is enthusiastic in charity and was selected as one of the top ten charitable artists by Beautiful China.",
+        "cn": "左晋，旅居加拿大的著名油画家，C9画廊联合创始人，现任加拿大中华艺术协会会长，中华禅画院副院长兼油画系主任。被一带一路文化工作委员会评为艺术委员，被加拿大联邦政府评为中加文化交流使者。热衷支持慈善事业，被评选为美丽中国的十大慈善艺术家。"
+      }
+    },
+    {
+      "id": "mp_007",
+      "name": {
+        "en": "Tracy Qin",
+        "cn": "Tracy Qin"
+      },
+      "image": "./images/aboutUs/team-6.jpg",
+      "position": {
+        "en": "Finance Officer",
+        "cn": "财务总监"
+      },
+      "detail": {
+        "en": "",
+        "cn": ""
+      }
+    },
+    {
+      "id": "mp_008",
+      "name": {
+        "en": "Leighann Lee",
+        "cn": "Leighann Lee"
+      },
+      "image": "./images/aboutUs/team-4.jpg",
+      "position": {
+        "en": "Marketing & Communication Director",
+        "cn": "市场传播总监"
+      },
+      "detail": {
+        "en": "",
+        "cn": ""
+      }
+    }
+  ]
+}

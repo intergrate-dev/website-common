@@ -1,0 +1,158 @@
+{
+  "banner": {
+    "id": "b_001",
+    "title": "",
+    "image": "./images/joinUs/banner.png"
+  },
+  "currentPosition": "Current Position : home > Join Us > Member Service",
+  "currPosition": {
+    "en": "Current Position : home > Join Us > Member Service",
+    "cn": "当前位置 : 首页 >  加入我们 > 会员服务"
+  },
+  "memberService": {
+    "theme": {
+      "en":"Member Service",
+      "cn": "会员服务"
+    },
+    "image": "./images/joinUs/member-service.JPG",
+    "content": {
+      "en": "The Association is committed to share the resources in China and North America with professionals in the arts and culture industry, to showcase our members  projects to the wider audience to promote their work and increase their influence. We will share detailed market research reports, host conferences to promote exchanges in creative and culture industry.\nThe purpose of our career development program is to cultivate the next generation of cultural professionals with expertise and global perspectives.",
+      "cn": "协会致力于为文化艺术领域的专业人士整合中国、北美各项资源，为入会成员的项目或作品在两地进行宣传推广，拓展更广泛的观众群，并协助提高创作者在国际业界的知名度和影响力，并为会员提供详尽的专项委托调研报告，定期召开行业论坛，促进中国、北美两地行业专业人士之间的联系与互动。\n开展职业养成计划，培养新生代文化艺术人才的专业涵养和国际化视野。"
+    }
+  },
+  "jobList": [
+    {
+      "category": {
+        "en": "Join Us",
+        "cn": "加入我们"
+      },
+      "positions": [
+        {
+          "position": {
+            "en": "一. Chinese-English Translator&Interpreter",
+            "cn": "一、中英文翻译："
+          },
+          "items": [
+            {
+              "item": {
+                "en": "Job Responsibilities:",
+                "cn": "岗位职责："
+              },
+              "details": {
+                "en": [
+                  "1.Translate documents from Chinese to English",
+                  "2.Acting as interpreter between participants in business meetings, conference and event settings"
+                ],
+                "cn": [
+                  "1、负责日常“中译英”文字翻译工作；",
+                  "2、负责商务谈判、会议、及活动期间现场口语翻译工作；"
+                ]
+              }
+            },
+            {
+              "item": {
+                "en": "Qualifications:",
+                "cn": "任职要求："
+              },
+              "details": {
+                "en": [
+                  "1.Bachelor Degree",
+                  "2.Fluency in English and Chinese in verbal and written communication",
+                  "3.Attention to detail; punctuality; strong sense of responsibilities"
+                ],
+                "cn": [
+                  "1.大学本科以上学历",
+                  "2. 英语口音纯正，表达流利；",
+                  "3. 工作细致认真，诚信守时，责任心强。"
+                ]
+              }
+            },
+            {
+              "item": {
+                "en": "Location: Toronto",
+                "cn": "工作地点：多伦多"
+              },
+              "details": {
+                "en": [
+                  "Please send your resume and cover letter to <span style='font-weight: bold;'>hr@caeassociation.com</span>"
+                ],
+                "cn": [
+                  "简历请发至邮箱：hr@caeassociation.com"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "position": {
+            "en": "二. Event Coordinator",
+            "cn": "二、活动策划"
+          },
+          "items": [
+            {
+              "item": {
+                "en": "Job Responsibilities:",
+                "cn": "岗位职责："
+              },
+              "details": {
+                "en": [
+                  "1.Develop event strategies and creating proposals including event details and aspect",
+                  "2.Manage on-site preparations, production and breakdown, proactively identify and solving operational challenges to ensure the high-quality event delivery and completion of project objectives",
+                  "3.Assess the event’s overall success and submit report"
+                ],
+                "cn": [
+                  "1、负责活动策略梳理，撰写活动策划方案；",
+                  "2、负责活动执行期间管理，把控活动流程，及时对执行方案及紧急事件做出及时有效处理，保证活动呈现效果和完成质量；",
+                  "3、实施活动后，评估活动效果并撰写活动报告。"
+                ]
+              }
+            },
+            {
+              "item": {
+                "en": "Qualifications:",
+                "cn": "任职要求："
+              },
+              "details": {
+                "en": [
+                  "1.At least 5 years’ experience as an event coordinator",
+                  "2.Demonstrated skills in event planning and operation",
+                  "3.Competent in event operations: preparing invitations, scheduling meetings, liaising with venue, event set-up, onsite coordination and response",
+                  "4.Writing skills: creating event documents and final report",
+                  "5.Flexible and able to respond to unexpected situation"
+                ],
+                "cn": [
+                  "1.具备5年以上活动经验",
+                  "2.有较强的文案策划能力，具有丰富的执行经验；",
+                  "3. 熟悉并可管控活动的人员邀约，会务安排，物料设计与制作，场地沟通，现场搭建，现场管控，突发事件处理等；",
+                  "4. 活动文档的撰写与整理，及项目总结报告等；",
+                  "5. 应变力强，能够根据活动实际情况，积极主动地作出相应调整。"
+                ]
+              }
+            },
+            {
+              "item": {
+                "en": "Location: Toronto",
+                "cn": "工作地点：多伦多"
+              },
+              "details": {
+                "en": [
+                  "Please send your resume and cover letter to <span style='font-weight: bold;'>hr@caeassociation.com</span>"
+                ],
+                "cn": [
+                  "简历请发至邮箱：hr@caeassociation.com"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "partner": [
+    {
+      "name": "",
+      "image": "partner one",
+      "link": "link ..."
+    }
+  ]
+}

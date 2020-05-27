@@ -1,0 +1,321 @@
+{
+  "banner": {
+    "id": "b_001",
+    "title": "",
+    "image": "./images/showCase/banner.jpg"
+  },
+  "currPosition": {
+    "en": "Current Position : home > Showcase > What's On",
+    "cn": "当前位置 : 首页 >  活动展示 > 活动讯息"
+  },
+  "leftImg": {
+    "id": "img_001",
+    "name": {
+      "en": "Media Room",
+      "cn": "宣传片"
+    },
+    "image": "./images/showCase/8.jpg",
+    "videos": [
+      {
+        "id": "v_001",
+        "name": "v-2020",
+        "url": "./images/showCase/videos/2020.MOV",
+        "poster": "./images/showCase/videos/tiff-2020.jpg",
+        "action": true
+      },
+      {
+        "id": "v_002",
+        "name": "v-2019-1",
+        "url": "./images/showCase/videos/2019-1.mp4",
+        "poster": "./images/showCase/videos/tiff-2019-1.jpg",
+        "action": false
+      },
+      {
+        "id": "v_003",
+        "name": "v-2019-2",
+        "url": "./images/showCase/videos/2019-2.mp4",
+        "poster": "./images/showCase/videos/tiff-2019-2.jpg",
+        "action": false
+      }
+    ]
+  },
+  "rightTexts": [
+    {
+      "id": "tx_001",
+      "title": {
+        "en": "2019 Toronto international film festival<div></div><span style=''></span>--the first chinese film and production exhibition",
+        "cn": "2019多伦多国际电影节<div></div><span style=''></span>--首届中国电影制片展"
+      },
+      "date": "",
+      "content": ""
+    },
+    {
+      "id": "tx_001",
+      "title": {
+        "en": "Media coverage on 2019 exhibition",
+        "cn": "2019年展会媒体报道"
+      },
+      "date": "",
+      "content": ""
+    },
+    {
+      "id": "tx_001",
+      "title": {
+        "en": "2020 Toronto international film festival<div></div><span style=''></span>--the second chinese film and production exhibition",
+        "cn": "2019多伦多国际电影节<div></div><span style=''></span>--第二届中国电影制片展"
+      },
+      "date": "",
+      "content": ""
+    }
+  ],
+  "belowTexts": [
+    {
+      "id": "bt_001",
+      "title": {
+        "en": "TIFF 2019 Gallery",
+        "cn": "TIFF 2019 画展"
+      },
+      "image": "./images/showCase/9.jpg",
+      "content": {
+        "en": "In 2019, the Association participated the Toronto International Film Festival (TIFF) and was the first exhibitor presenting Chinese film companies in the Festival and successfully hosted the first Chinese Film Exhibition.A total of dozens of Chinese film companies participated in the exhibition, made connections with many peers and discussed about future collaborations.",
+        "cn": "2019年，北美文化艺术交流协会与多伦多电影节(TI.cnFF)合作，举办了首届中国电影展、行业论坛及晚会。数十家中国电影公司在协会的组织下集聚一堂，与来自世界各国业界同行进行深入交流，并共同探讨和展望未来的合作机会。"
+      },
+      "toPage": "TIFF-2019"
+    },
+    {
+      "id": "bt_002",
+      "title": {
+        "en":  "TIFF 2018 Gallery",
+        "cn": "TIFF 2018 画展"
+      },
+      "image": "./images/showCase/10.JPG",
+      "content": {
+        "en": "In 2018, the association partnered with TIFF and presented Chinese film productions in promotion meeting and industry forum",
+        "cn": "2018年与多伦多电影节合作，举办中国电影推荐会及论坛。"
+      },
+      "toPage": "TIFF-2018"
+    },
+    {
+      "id": "bt_003",
+      "title": {
+        "en":  "2020 Schedule",
+        "cn": "2020 日程"
+      },
+      "image": "./images/showCase/11.jpg",
+      "content": {
+        "en": "Coming soon:  The Association will introduce more Chinese film companies, professionals and productions to the Toronto International Film Festival (TIFF) 2020. ",
+        "cn": "北美文化艺术交流协会将在2020多伦多电影节(TIFF)中向世界电影同行推介更多中国电影公司、电影人和电影作品，让我们拭目以待。"
+      },
+      "toPage": "Schedule-2020"
+    },
+    {
+      "id": "bt_004",
+      "title": {
+        "en":  "Join us",
+        "cn": "加入我们"
+      },
+      "image": "./images/showCase/12.jpg",
+      "content": {
+        "en": "",
+        "cn": ""
+      },
+      "toPage": "join-us-detail"
+    }
+  ],
+  "events": [
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/event/1.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/event/2.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/event/3.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/event/4.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/event/5.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/event/6.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/event/7.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/event/8.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/event/9.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/event/10.jpg"
+    }
+  ],
+  "exhibitions": [
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/exhibition/1.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/exhibition/2.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/exhibition/3.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/exhibition/4.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/exhibition/5.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/exhibition/6.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/exhibition/7.jpg"
+    }
+  ],
+  "newsList": [
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/news/1.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/news/2.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/news/3.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/news/5.jpg"
+    }
+  ],
+  "exhitions_2018": [
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/TIFF-2018/1.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/TIFF-2018/2.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/TIFF-2018/3.jpg"
+    },
+    {
+      "id": "ev_001",
+      "image": "./images/showCase/TIFF-2018/4.jpg"
+    }
+  ],
+  "schedule": {
+    "name": {
+      "en": "2020 TIFF Key Dates",
+      "cn": "2020多伦多电影节日程"
+    },
+    "list": [
+      {
+        "name": {
+          "en": "1、2020 Toronto International Film Festival:",
+          "cn": "1、2020年举办时间："
+        },
+        "time": {
+          "en": "Septemper 10 – 20",
+          "cn": "2020年9月10日---9月20日"
+        }
+      },
+      {
+        "name": {
+          "en": "2、Submission deadlines for public screening :",
+          "cn": "2、参加公映电影送选时间三次："
+        },
+        "time": {
+          "en": "April 3,2020 (Early-bird deadline) ; May 29, 2020 (Standard deadline); June 12, 2020 (Late deadline)",
+          "cn": "2020年4月3日、2020年5月29日、2020年6月12日。"
+        }
+      },
+      {
+        "name": {
+          "en": "3、Submission deadline for private screening: ",
+          "cn": "3、私映电影报名截止时间："
+        },
+        "time": {
+          "en": "July 30, 2020",
+          "cn": "2020年7月30号。"
+        }
+      },
+      {
+        "name": {
+          "en": "4、Registration deadline for Chinese Film Exhibition at TIFF: ",
+          "cn": "4、多伦多电影节“中国电影展”报名截止时间："
+        },
+        "time": {
+          "en": "July 30, 2020",
+          "cn": "2020年7月30日。"
+        }
+      },
+      {
+        "name": {
+          "en": "5、Registration deadline for Chinese Film Industry Conference at TIFF: ",
+          "cn": "5、多伦多电影节“中国电影产业论坛”报名截止时间："
+        },
+        "time": {
+          "en": "July 30, 2020",
+          "cn": "2020年7月30日。"
+        }
+      },
+      {
+        "name": {
+          "en": "6、Registration deadline for Best Movie Locations in China Nomination at TIFF: ",
+          "cn": "6、多伦多电影节“中国最佳影视拍摄取景地推荐”报名截止日期："
+        },
+        "time": {
+          "en": "July 30, 2020",
+          "cn": "2020年7月30日。"
+        }
+      },
+      {
+        "name": {
+          "en": "7、Registration deadline for China Night Awards Gala at TIFF: ",
+          "cn": "7、多伦多电影节“中国电影之夜”颁奖盛典报名截止日期："
+        },
+        "time": {
+          "en": "July 30, 2020",
+          "cn": "2020年7月30日。"
+        }
+      },
+      {
+        "name": {
+          "en": "8、 Hotel booking deadline: ",
+          "cn": "8、酒店预订截止时间："
+        },
+        "time": {
+          "en": "July 30, 2020",
+          "cn": "2020年7月30日。"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+node_modules
+example/pdfh5-vue/node_modules
+example/pdfh5-vue/package-lock.json
+package-lock.json
+version
+test
+testPDF

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://fkwhcm10.demo.webportal.top/col.jsp?id=101 -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="__noGmain g_html" style="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="shortcut icon" href="data:;base64,=">
+    <meta name="description" content="">
+    <meta itemprop="name" content="">
+    <meta name="keywords" content="">
+    <!--<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width,height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />-->
+
+
+    <link type="text/css" href="./css/siteBase2.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/base2.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/dist/module.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/component/swiper.min.css">
+    <link type="text/css" href="./css/fkTheme.min.css" rel="stylesheet">
+    <link id="sysnavlink" type="text/css" href="./css/fkNav.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/floatBtn1.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/jzcusstyle.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./js/jquery-core.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-mousewheel.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-core.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-parallax.min.js"></script>
+    <script type="text/javascript" src="./js/include.min.js"></script>
+
+    <style type="text/css" id="styleWebSite">
+        /*custom define*/
+        .pro-image-show-line1 {
+            width: 100%;
+            height: 277px;
+        }
+
+        .pro-image-show-line2-left {
+            width: 100%;
+            max-height: 490px;
+        }
+
+        .pro-image-show-line2-right {
+            width: 100%;
+        }
+
+        #bannerV2 .fk-inBannerListZone {
+            width: 90%;
+        }
+
+        #bannerV2 .fk-inBannerListZone {
+            margin-left: -600px;
+        }
+    </style>
+    <style type="text/css" id="styleBannerBg">
+        .webBannerTable {
+            background: none !important;
+        }
+
+        .webBanner {
+            background: none !important;
+        }
+    </style>
+    <style type="text/css" id="stylebacktotop">
+        .fk_siteBackToTop {
+            position: fixed;
+        }
+
+        .fk_siteBackToTop {
+            width: 50px;
+        }
+
+        .fk_siteBackToTop {
+            height: 50px;
+        }
+
+        .fk_siteBackToTop {
+            margin: 1px;
+        }
+        .playing {
+            display: inline-block;
+            width: 63px;
+            height: 22px;
+            line-height: 22px;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            background-image: linear-gradient(90deg,rgba(22,224,90,.6),rgba(22,224,157,.6));
+            border-radius: 2px
+        }
+        .playing:before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 8px;
+            margin-right: 4px;
+            background: url(./images/showCase/videos/playon.gif) no-repeat;
+        }
+        .video_page {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background: url(./images/showCase/videos/background-screen.jpg);
+        }
+
+        .go_back {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            font-size: 18px;
+            z-index: 99;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="g_body  g_locale2052  g_cusSiteWidth  bUserWrap">
+
+<div id="web" style="width: 100%;">
+    <video-play></video-play>
+</div>
+
+<div id="" class="go_back" title="go back" onclick="goBack();">
+    <img src="./images/common/goBack.png" style="width: 70%;cursor: pointer;">
+</div>
+
+<!--toTop-->
+<div id="siteBackToTop_small_box" class="fk_siteBackToTop" title="To Top" _style="secondStyle_04"
+     style="right: 57px; bottom: 10px; display: block;" onclick="backToTop();">
+</div>
+
+<script type="text/javascript" src="./js/component/swiper.min.js"></script>
+<script type="text/javascript" src="./js/component/vue-2.4.2.min.js"></script>
+<script type="text/javascript" src="./js/component/vue-resource-1.5.0.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+
+<template id="video-play">
+    <!--class="video_page" -->
+    <div ref="imgBox" id="imgBox" style="">
+        <!--margin: 78px 60px 0px 200px;-->
+        <div :style="'float: left;width: 50%;text-align: right;margin: 13px ' + (90 * widthRate) + 'px 0 60px;'">
+            <video muted id="activeVideo" controls="controls" :poster="actVideo.poster" :src="actVideo.url">
+            </video>
+        </div>
+        <!---->
+        <div style="float: left;width: 30%;text-align: left;margin: 80px 0 0 0;">
+            <div v-show="showPre"><img src="./images/common/iconfont_down.png" style="margin: 0px 0 0 134px; width: 10%; cursor: pointer;"
+                    @click="scrollUp()"></div>
+            <!---->
+            <div id="video_square" :style="'height: ' + (showCnt * defaultHeight) +'px;overflow-y: hidden;float: left;'">
+                <div v-for="(video, index) in leftImg.videos" :id='video.id' style="float: left;width: 70%; margin: 0 25px 30px 0;">
+                    <!--width: 306px; height: 176px; cursor: pointer;-->
+                    <img :src="video.poster" :style="'width: 80%;height: ' + (145 * widthRate) + 'px; cursor: pointer;float: left;'" @click="clickThis(video, index)">
+                    <div v-show="index == position" :style="'float: right;margin: ' + (145 * widthRate - 22) + 'px 0px 0px -64px;height: 22px;float: left;'">
+                        <span class="playing" style="">playing</span></div>
+                    <!--<div style="height: 30px;"></div>-->
+                </div>
+            </div>
+            <div v-show="showNext"><img src="./images/common/iconfont_up.png" style="margin: 0px 0 0 134px; width: 10%; cursor: pointer;"
+                    @click="scrollDown()"></div>
+        </div>
+    </div>
+</template>
+<script>
+    Vue.component('video-play', {
+        template: '#video-play',
+        data() {
+            return {
+                leftImg: {},
+                actVideo: {},
+                position: null,
+                showCnt: 3,
+                totalCnt: null,
+                showPre: false,
+                showNext: true,
+                head: 1,
+                defaultHeight: 200,
+                //screenWidth: document.body.clientWidth
+                widthRate: 1
+            }
+        },
+        computed: {},
+        methods: {
+            getLeftImg() {
+                this.$http.get('./data/showCase.json').then(res => {
+                    this.leftImg = res.body.leftImg;
+                    if (!this.leftImg || !Array.prototype.isPrototypeOf(this.leftImg.videos) || this.leftImg.videos.length === 0) {
+                        console.log('leftImg is empty or vidos is empty')
+                        return;
+                    }
+                    this.widthRate = document.body.clientWidth/1390;
+                    this.actVideo = this.leftImg.videos[0];
+                    this.position = 0;
+                    this.totalCnt = this.leftImg.videos.length;
+                    if (this.totalCnt == this.showCnt) {
+                        this.showNext = false;
+                    }
+                })
+            },
+            playVideo() {
+                const video = document.getElementById('activeVideo');
+                video.volume = 0;
+                video.width = 620 * this.widthRate;
+                video.height = 480 * this.widthRate;
+                video.play();
+            },
+            clickThis(obj, p) {
+                this.actVideo = obj;
+                this.playVideo();
+                this.position = p;
+            },
+            scrollUp() {
+                this.head -= 1;
+                $("#video_square").scrollTop((this.head-1) * this.defaultHeight * this.showCnt);
+                this.showNext = true;
+                if (this.head == 1){
+                    this.showPre = false;
+                }
+            },
+            scrollDown() {
+                $("#video_square").scrollTop(this.head * this.defaultHeight * this.showCnt);
+                this.head += 1;
+                const tail = Math.floor((this.totalCnt + this.showCnt - 1)/ this.showCnt);
+                this.showPre = true;
+                if (this.head == tail){
+                    this.showNext = false;
+                }
+            }
+        },
+        created() {
+            this.getLeftImg()
+        },
+        mounted() {
+            /*const that = this
+            window.onresize = () => {
+                return (() => {
+                    window.screenWidth = document.body.clientWidth
+                    that.screenWidth = window.screenWidth
+                })()
+            }*/
+
+            /*// 1、数据首次加载完后 → 获取图片（或外层框）宽度，并设置其高度
+            this.$nextTick(() => {
+                // 获取图片（或外层框）
+                let imgBox = this.$refs.imgBox
+                // 获取其宽度
+                let wImgbox = imgBox.getBoundingClientRect().width
+                // 设置其高度（以宽度的60%为例）
+                this.$refs.imgBox.height = 0.6 * wImgbox + 'px'
+            })
+            // 2、挂载 reisze 事件 → 屏幕缩放时监听宽度变化
+            const that = this
+            window.onresize = () => {
+                return (() => {
+                    // window.screenWidth = document.body.clientWidth
+                    // that.screenWidth = window.screenWidth
+                    // console.log(that.screenWidth)
+                    this.$nextTick(() => {
+                        let imgBox = this.$refs.imgBox
+                        let wImgbox = imgBox[0].getBoundingClientRect().width
+                        this.imgBox.height = 0.6 * wImgbox + 'px'
+                    })
+                })()
+            }*/
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+            this.playVideo();
+        },
+        watch: {
+            /*screenWidth(val){
+                // 为了避免频繁触发resize函数导致页面卡顿，使用定时器
+                if(!this.timer){
+                    // 一旦监听到的screenWidth值改变，就将其重新赋给data里的screenWidth
+                    this.screenWidth = val
+                    this.timer = true
+                    let that = this
+                    setTimeout(function(){
+                        // 打印screenWidth变化的值
+                        console.log(that.screenWidth)
+                        that.timer = false
+                    },400)
+                }
+            }*/
+        },
+        beforeDestroy() {
+            delete this.leftImg;
+        }
+    })
+
+    new Vue({
+        el: '#web'
+    })
+</script>
+</body>
+
+</html>

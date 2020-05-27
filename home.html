@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="__noGmain g_html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta itemprop="name" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+
+    <link type="text/css" href="./css/siteBase2.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/base2.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/dist/module.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/component/swiper.min.css">
+    <link type="text/css" href="./css/fkTheme.min.css" rel="stylesheet">
+    <link id="sysnavlink" type="text/css" href="./css/fkNav.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/floatBtn1.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/jzcusstyle.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./js/jquery-core.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-mousewheel.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-core.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-parallax.min.js"></script>
+    <script type="text/javascript" src="./js/include.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+
+</head>
+<body >
+<div id="web" class="" :style="web_layout">
+    <!--header page-->
+    <include src="./header.html"></include>
+
+    <my-banner></my-banner>
+
+    <div style="background-color: white;">
+        <div :style="'width: 100%;padding: 4% 0 0 0;height: ' + (400 * heightRate) + 'px;'">
+            <div :style="'height: ' + (60 * heightRate) +' px;width: 100%;text-align: center;width: 100%;'">
+                <span :style="'font-family: fontface__微软雅黑, Microsoft YaHei; width: ' + (280 * widthRate) + 'px;font-size: ' + (heightRate * 23) + 'px; color: rgb(53, 53, 53);text-align: center;'" v-text="isEn ? 'About CAE' : '关于我们'"></span>
+            </div>
+            <about-us></about-us>
+            <div></div>
+        </div>
+    </div>
+
+    <!--important-->
+    <div id="webContainerTable" class="webContainerTable fk-webContainerTableForNoLayout" style="background-color: white;">
+        <div id="webContainer" class="webContainer">
+            <div id="container" class="container">
+                <div class="containerTop">
+                    <div class="left"></div>
+                    <div class="center"></div>
+                    <div class="right"></div>
+                </div>
+
+                <div class="containerMiddle">
+                    <div id="containerMiddleLeft" class="containerMiddleLeft">
+                    </div>
+                    <div class="containerMiddleCenter">
+                        <div id="containerMiddleCenterTop" class="containerMiddleCenterTop">
+                        </div>
+                        <div id="containerForms" class="containerForms">
+                            <div id="topForms" class="column forms mainForms topForms" style="display:none">
+                            </div>
+                            <table class="containerFormsMiddle" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td valign="top" id="containerFormsLeft" class="containerFormsLeft"
+                                        style="display:none">
+                                        <div class="containerFormsLeftTop">
+                                        </div>
+                                        <div id="leftForms" class="column forms sideForms leftForms">
+                                        </div>
+                                        <div class="containerFormsLeftBottom">
+                                        </div>
+                                    </td>
+                                    <td valign="top" id="containerFormsCenter" class="containerFormsCenter">
+                                        <div id="centerTopForms" class="column forms mainForms centerTopForms"
+                                             style="display:none">
+                                        </div>
+                                        <div class="containerFormsCenterMiddle J_containerFormsCenterMiddle">
+                                            <div id="middleLeftForms" class="column forms mainForms middleLeftForms"
+                                                 style="display:none">
+                                            </div>
+                                            <div id="middleRightForms" class="column forms mainForms middleRightForms"
+                                                 style="display:none">
+                                            </div>
+                                            <div class="clearfloat"></div>
+                                        </div>
+                                        <div id="centerBottomForms" class="column forms mainForms centerBottomForms"
+                                             style="display:none">
+                                        </div>
+                                    </td>
+                                    <td valign="top" id="containerFormsRight" class="containerFormsRight"
+                                        style="display:none">
+                                        <div class="containerFormsRightTop">
+                                        </div>
+                                        <div id="rightForms" class="column forms sideForms rightForms">
+                                        </div>
+                                        <div class="containerFormsRightBottom">
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div id="bottomForms" class="column forms mainForms bottomForms" style="display:none">
+                            </div>
+                            <div id="containerPlaceholder" class="containerPlaceholder" style="height: 0px;"></div>
+                        </div>
+                        <div id="containerMiddleCenterBottom" class="containerMiddleCenterBottom">
+                        </div>
+                    </div>
+                    <div id="containerMiddleRight" class="containerMiddleRight"></div>
+                </div>
+                <div class="containerBottom">
+                    <div class="left"></div>
+                    <div class="center"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="fullmeasureBottomForms" style="margin: -5% 0 0 0px;"-->
+    <div id="fullmeasureBottomForms" style=""
+         class="fullmeasureContainer forms fk-fullmeasureForms fullmeasureForms fullmeasureBottomForms">
+        <div id="module358" _indexclass="formIndex1" _moduletype="1" _modulestyle="109" _moduleid="358"
+             class="form form358 formIndex1 formStyle109 fk-formFullmeasure " title="" _sys="0" _banid=""
+             :style="aStyle" _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+             _infullmeasurepack="0" _intabpack="0" _autoheight="0" _global="false" _independent="false"
+             data-scrollbar="0" fmslidestyle="0" fmpage="1" iscarousel="0" displaytime="4" carouselspeed="1"
+             cuscarousel="0">
+
+            <div class="fillContentRelative"
+                 style="position:absolute; z-index:-1; height:100%; width:100%;display:none;"></div>
+            <div style="position: static;"
+                 class="fullmeasureOuterContentPage fullmeasureOuterContentPage1 J_fullmeasurePageShow" page="1">
+                <div class="fullmeasureOuterContentBg fullmeasureOuterContentBg358 fullmeasureStyle12"></div>
+                <div class="fullmeasureOuterContent fullmeasureOuterContent358" style="background-color: WHITE;">
+                    <div class="fullmeasureContent fullmeasureContent358" id="fullmeasureContent358_1" moduleid="358" style="width: 88%;">
+                        <div class="fullmeasureContentBg fullmeasureContentBg358"></div>
+                        <div class="J_zoneEnableAll J_fullmeasurePackContent elemZone elemZoneModule fk-formPack"
+                             moduleid="358" id="fk-inFullmeasureListZone358-1">
+                            <!--<div class="fk-elemZoneBg J_zoneContentBg"></div>-->
+
+                            <div id="module369" bannertitle="文本" _indexclass="" _moduletype="1" _modulestyle="86"
+                                 _moduleid="369" class="form form369 formStyle86 siteEditor " title="" _sys="0"
+                                 _banid=""
+                                 :style="'width: 100%;height: ' + (51 * heightRate) + 'px;margin: ' + (0 * heightRate) + 'px 0 0 0;'"
+                                 _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                                 _infullmeasurepack="358" _intabpack="0" _autoheight="0" _global="false"
+                                 _independent="false" data-scrollbar="0">
+                                <div class="lightModuleOuterContent lightModuleOuterContent369">
+                                    <div class="fk-editor simpleText" style="text-align: center;height: 80px;"><span style=""><span
+                                            style="color: rgb(53, 53, 53);"><span
+                                            :style="'font-size: ' + (23 * heightRate) + 'px;width: ' + (280 * widthRate) + 'px; font-family: fontface__微软雅黑, Microsoft YaHei;'" v-text="isEn ? 'Our Project' : '主要项目'"></span></span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--主要项目 area-->
+                            <major-project></major-project>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfloat clearfloat358"></div>
+            </div>
+        </div>
+
+        <!--style="height: 837px;"-->
+        <div id="module366" :style="'height: ' + (600 * heightRate) + 'px;'" _indexclass="formIndex2" _moduletype="1" _modulestyle="109"
+             _moduleid="366"
+             class="form form366 formIndex2 formStyle109 fk-formFullmeasure " title="" _sys="0" _banid=""
+             _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+             _infullmeasurepack="0" _intabpack="0" _autoheight="0" _global="false" _independent="false"
+             data-scrollbar="0" fmslidestyle="0" fmpage="1" iscarousel="0" displaytime="4" carouselspeed="1"
+             cuscarousel="0">
+
+            <!--<div class="fillContentRelative"
+                 style="position:absolute; z-index:-1; height:100%; width:100%;display:none;"></div>-->
+            <div style="position: static;"
+                 class="fullmeasureOuterContentPage fullmeasureOuterContentPage1 J_fullmeasurePageShow" page="1">
+                <!--TODO-->
+                <div class="fullmeasureOuterContentBg fullmeasureOuterContentBg366 fullmeasureStyle12"
+                     style="background: url(./images/index/timg.jpg) repeat top ,transparent;"></div>
+
+                <div class="fullmeasureOuterContent fullmeasureOuterContent366">
+                    <div class="" id="fullmeasureContent366_1" moduleid="366">
+                        <div class="fullmeasureContentBg fullmeasureContentBg366"></div>
+                        <div class="J_zoneEnableAll J_fullmeasurePackContent elemZone elemZoneModule fk-formPack"
+                             moduleid="366" id="fk-inFullmeasureListZone366-1">
+                            <div class="fk-elemZoneBg J_zoneContentBg"></div>
+
+                            <div id="module396" bannertitle="文本" _indexclass="" _moduletype="1" _modulestyle="86"
+                                 _moduleid="396" class="form form396 formStyle86 siteEditor " title="" _sys="0"
+                                 _banid="" style="margin: 5% 0 0 0; width: 100%;" _side="0"
+                                 _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                                 _infullmeasurepack="366" _intabpack="0" _autoheight="0" _global="false"
+                                 _independent="false" data-scrollbar="0">
+                                <div class="lightModuleOuterContent lightModuleOuterContent396">
+                                    <!--font-family: fontface__思源宋体Heavy__16__969901005355;-->
+                                    <div class="fk-editor simpleText" style="text-align: center;"><span style="color: black"><span
+                                            style="color: rgb(53, 53, 53);"><span
+                                            :style="'font-size: ' + (23 * heightRate) + 'px;width: ' + (280 * widthRate) + 'px; font-family: fontface__微软雅黑, Microsoft YaHei;'" v-text="isEn ? 'Showcase' : '活动展示'"></span></span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <show-case></show-case>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfloat clearfloat366"></div>
+            </div>
+        </div>
+
+        <div id="module628" _indexclass="formIndex3" _moduletype="1" _modulestyle="109" _moduleid="628"
+             class="form form628 formIndex3 formStyle109 fk-formFullmeasure " title="" _sys="0" _banid=""
+             :style="'height: ' + (480 * heightRate) + 'px ;margin: -12% 0 0 0;'" _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+             _infullmeasurepack="0" _intabpack="0" _autoheight="0" _global="false" _independent="false"
+             data-scrollbar="0" fmslidestyle="0" fmpage="1" iscarousel="0" displaytime="4" carouselspeed="1"
+             cuscarousel="0">
+            <div class="fillContentRelative"
+                 style="position:absolute; z-index:-1; height:100%; width:100%;display:none;"></div>
+            <div style="position: static;"
+                 class="fullmeasureOuterContentPage fullmeasureOuterContentPage1 J_fullmeasurePageShow" page="1">
+                <div class="fullmeasureOuterContentBg fullmeasureOuterContentBg628 fullmeasureStyle12"></div>
+                <div class="fullmeasureOuterContent fullmeasureOuterContent628">
+                    <div class="fullmeasureContent fullmeasureContent628" id="fullmeasureContent628_1" moduleid="628" style="width: 80%;">
+                        <div class="fullmeasureContentBg fullmeasureContentBg628"></div>
+                        <div class="J_zoneEnableAll J_fullmeasurePackContent elemZone elemZoneModule fk-formPack"
+                             moduleid="628" id="fk-inFullmeasureListZone628-1">
+                            <div class="fk-elemZoneBg J_zoneContentBg"></div>
+                            <div id="module625" bannertitle="文本" _indexclass="" _moduletype="1" _modulestyle="86"
+                                 _moduleid="625" class="form form625 formStyle86 siteEditor " title="" _sys="0"
+                                 _banid="" style="width: 100%; margin: 6% 0 0 0;" _side="0"
+                                 _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                                 _infullmeasurepack="628" _intabpack="0" _autoheight="0" _global="false"
+                                 _independent="false" data-scrollbar="0">
+                                <div class="lightModuleOuterContent lightModuleOuterContent625">
+                                    <div class="fk-editor simpleText fk-editor-break-word  ">
+                                        <div style="text-align: center;"><span
+                                                :style="'font-size: ' + (23 * heightRate) + 'px; color: rgb(53, 53, 53); font-family: fontface__微软雅黑, Microsoft YaHei; background-color: initial;'" v-text="defTitle"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="module629" _indexclass="" _moduletype="1" _modulestyle="7" _moduleid="629"
+                                 class="form form629 formStyle7" title="" _sys="0" _banid=""
+                                 style="top: 22%;" _side="0" _intab="0"
+                                 _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0" _infullmeasurepack="628"
+                                 _intabpack="0" _autoheight="1" _global="false" _independent="false" data-scrollbar="0">
+                                <div class="formTop formTop629">
+                                    <div class="left"></div>
+                                    <div class="center"></div>
+                                    <div class="right"></div>
+                                </div>
+                                <div class=" formMiddle formMiddle629" style="">
+                                    <div class="formMiddleLeft formMiddleLeft629"></div>
+                                    <div class="formMiddleCenter formMiddleCenter629 " valign="top">
+                                        <div class="formMiddleContent formMiddleContent629 fk-formContentOtherPadding"
+                                             tabstyle="0">
+                                            <div>
+                                                <!--news-activity area-->
+                                                <news-activity></news-activity>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="formMiddleRight formMiddleRight629"></div>
+                                </div>
+                                <div class="formBottom formBottom629">
+                                    <div class="left left629"></div>
+                                    <div class="center center629"></div>
+                                    <div class="right right629"></div>
+                                </div>
+                                <div class="clearfloat clearfloat629"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfloat clearfloat628"></div>
+            </div>
+        </div>
+
+        <div id="module416" _indexclass="formIndex4" _moduletype="1" _modulestyle="109" _moduleid="416"
+             class="form form416 formIndex4 formStyle109 fk-formFullmeasure " title="" _sys="0" _banid=""
+             style="height: 384px;" _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+             _infullmeasurepack="0" _intabpack="0" _autoheight="0" _global="false" _independent="false"
+             data-scrollbar="0" fmslidestyle="0" fmpage="1" iscarousel="0" displaytime="4" carouselspeed="1"
+             cuscarousel="0">
+            <div class="fillContentRelative"
+                 style="position:absolute; z-index:-1; height:100%; width:100%;display:none;"></div>
+            <div style="position: static;"
+                 class="fullmeasureOuterContentPage fullmeasureOuterContentPage1 J_fullmeasurePageShow" page="1">
+                <div class="fullmeasureOuterContentBg fullmeasureOuterContentBg416 fullmeasureStyle12"></div>
+                <div class="fullmeasureOuterContent fullmeasureOuterContent416">
+                    <div class="fullmeasureContent fullmeasureContent416" id="fullmeasureContent416_1" moduleid="416" style="width: 62%;">
+                        <div class="fullmeasureContentBg fullmeasureContentBg416"></div>
+                        <div class="J_zoneEnableAll J_fullmeasurePackContent elemZone elemZoneModule fk-formPack"
+                             moduleid="416" id="fk-inFullmeasureListZone416-1">
+                            <div class="fk-elemZoneBg J_zoneContentBg"></div>
+                            <div id="module434" bannertitle="文本" _indexclass="" _moduletype="1" _modulestyle="86"
+                                 _moduleid="434" class="form form434 formStyle86 siteEditor " title="" _sys="0"
+                                 _banid="" :style="'margin: ' + (40 * heightRate) + 'px 0 0 0; width:  100%;'" _side="0"
+                                 _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                                 _infullmeasurepack="416" _intabpack="0" _autoheight="0" _global="false"
+                                 _independent="false" data-scrollbar="0">
+                                <div class="lightModuleOuterContent lightModuleOuterContent434">
+                                    <div class="fk-editor simpleText fk-editor-break-word" style="text-align: center;"><span
+                                            style="color: rgb(53, 53, 53);"><span
+                                            :style="'font-size: ' + (23 * heightRate) + 'px;font-family: fontface__微软雅黑, Microsoft YaHei;'" v-text="isEn ? 'Our Sponsors' : '赞助商'"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <our-sponsor></our-sponsor>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfloat clearfloat416"></div>
+            </div>
+        </div>
+
+        <wbr style="display:none;">
+    </div>
+
+    <!--toTop-->
+    <div class="site_to_top" title="To Top" onclick="backToTop();"></div>
+
+    <!--footer page-->
+    <include src="./footer.html"></include>
+</div>
+
+<link type="text/css" href="./css/fontsIco.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./js/component/horizontal-timeline/css/reset.css">
+<link rel="stylesheet" href="./js/component/horizontal-timeline/css/style.css">
+
+<script type="text/javascript" src="./js/component/swiper.min.js"></script>
+<script type="text/javascript" src="./js/component/vue-2.4.2.min.js"></script>
+<script type="text/javascript" src="./js/component/vue-resource-1.5.0.min.js"></script>
+<script src="./js/component/horizontal-timeline/js/modernizr.js"></script>
+<script src="js/component/horizontal-timeline/js/jquery-1.10.2-min.js"></script>
+<script src="./js/component/horizontal-timeline/js/jquery.mobile.custom.min.js"></script>
+<script src="./js/component/horizontal-timeline/js/main.js"></script>
+
+<template id="my-banner">
+    <div id="bannerV20" class="swiper-container" :style="'height: ' + (340 * heightRate) + 'px; background: none;'">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="(banner, index) in banners" :key="banner.id" :id="index">
+                <!--<img :style="'height: ' + (650 * heightRate) + 'px;'" :src="banner.image" alt="">-->
+                <img :style="'width: 100%;height: ' + (340 * heightRate) + 'px;'" :src="banner.image" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+</template>
+
+<template id="about-us">
+    <!--"'margin: ' + (50 * heightRate) + 'px ' + (106 * widthRate) + 'px 0;'"-->
+    <div id="photoForms622" style="margin: 2% 10%;width: 80%;" class="J_photoForms photoForms" picwidth="370" picheight="230">
+             <!--class="J_photoForm photoForm" :style="'width: 25%; margin: 2% 7% 2% 1%; padding: 0px; height: ' + (254 * heightRate) + 'px;'"-->
+        <div v-for="aboutUs in aboutUsList" :key="aboutUs.id" photoid="0" photoname="" photodisc=""
+             class="J_photoForm photoForm" style="width: 25%; margin: 2% 4% 2% 4%; padding: 0px;"
+             faiwidth="370" faiheight="230">
+            <div class="J_sortDiv insert_desc_warp_class ">
+                <!--:style="'width: ' + (370 * widthRate) + 'px;height: ' + (230 * heightRate) + 'px;'"-->
+                <div id="" photoname="" photodisc="" check="3" tmppic="" _lide="" class="" >
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td>
+                                     <!--:style="'width: ' + (370 * widthRate) + 'px; height: ' + (230 * heightRate) + 'px; position: relative; overflow: hidden;'">-->
+                                <div class="J_photoImgPanel"
+                                     style="width: 100%; position: relative; overflow: hidden;">
+                                    <!--:style="'width: ' + (370 * widthRate) + 'px; height: ' + (230 * heightRate) + 'px;margin-left: 0px;'"-->
+                                    <img iwidth="370" iheight="230" picsca="2" class="J_photoImg photoImg"
+                                         :src="aboutUs.image" alt="" style="width: 100%;">
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="parametersDiv insert_desc_class ">
+                    <div class="J_listDesc photoParameters firstLine  unifyPhotoTextGap" title="" style="text-align: center; margin-left: auto; margin-right: auto;
+                    height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--padding: 0 45%;-->
+        <div id="module363" bannertitle="按钮" _indexclass="" _moduletype="1" _modulestyle="81"
+             _moduleid="363" class="form form363 formStyle81" title="" _sys="0" _banid=""
+             :style="'border: ' + (6 * heightRate) + 'px solid transparent;margin: 19% 0% 5%;width: 100%;padding: 0 ' + (13 * heightRate + 25) + '%;'"
+             _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+             _infullmeasurepack="359" _intabpack="0" _autoheight="0" _global="false"
+             _independent="false" data-scrollbar="0">
+            <div class="lightModuleOuterContent lightModuleOuterContent363" >
+                <div class="J_floatBtnBox floatBtnBox floatBtnStyle floatBtnStyle1 fk-newAM-FloatBtnStyle1" style="margin: 0 0% 0 15%;">
+                    <a v-show="webVue.isEn" id="module363FlBtn" onclick="jumpToPage('aboutUs.html')" target="_blank"
+                       class="middle floatBtn"
+                       :style="'background: rgb(218, 34, 28);cursor: pointer;font-size: ' + (16 * heightRate) + 'px;font-family: fontface__微软雅黑, Microsoft YaHei;width: 90%;'"><span
+                            class="J_floatBtnText m_float_btn__text" >learn more</span>
+                    </a>
+                    <a v-show="!webVue.isEn" id="module363FlBtn" onclick="jumpToPage('aboutUs.html')" target="_blank"
+                       class="middle floatBtn"
+                       :style="'background: rgb(218, 34, 28);cursor: pointer;font-size: ' + (13 * heightRate) + 'px;font-family: fontface__微软雅黑, Microsoft YaHei;width: 85%;'"><span
+                            class="J_floatBtnText m_float_btn__text" >了解更多</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="major-project">
+    <div style="margin: -3% 0 0 6%;">
+        <!--this two div, set style by user agent-->
+        <!--<div style="height: 130px; width: 100%;"></div>-->
+        <div :id="majorPro.id" v-for="(majorPro, index) in majorProjects" :key="majorPro.id" bannertitle="图片"
+             _indexclass="" _moduletype="1" _modulestyle="79"
+             _moduleid="370" class="form form370 formStyle79" title="" _sys="0" _banid=""
+             :style="mpStyle" _side="0" _intab="0"
+             _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0" _infullmeasurepack="358"
+             _intabpack="0" _autoheight="0" _global="false" _independent="false" data-scrollbar="0">
+            <div class="lightModuleOuterContent lightModuleOuterContent370">
+                <div class="floatImg floatImg_J floatImg_J_special"><a hidefocus="true" class="J_floatImg_jump f_floatImg_jump ">
+                    <div class="floatImgWrap">
+                        <div class="forMargin">
+                            <!--height: 362px;-->
+                                 <!--style="width: 100%;" :src="majorPro.image" :alt="majorPro.name"data-imgloaded="true">-->
+                            <!--:style="'width: 100%;height: ' + (500 * heightRate) + 'px;'"-->
+                            <img id="float_img_370" class="J_img_lazyLoad float_in_img J_defImage"
+                                 style="width: 100%;" :src="majorPro.image" :alt="majorPro.name" data-imgloaded="true">
+                            <!--transform: scale(0.9);-->
+                                 <!--style="width: 100%;transform: translateY(20%);" :src="majorPro.image" :alt="majorPro.name"data-imgloaded="true">-->
+                            <!--<div class="fk-editor simpleText fk-editor-break-word" style="position: absolute;top: 190px;text-align: center;
+                                    width: 100%;vertical-align: middle;background-color: rgba(245, 245, 245, 0.41);">
+                                <span style="font-size: 18px;color: rgb(14, 14, 14);line-height: 76px;">{{majorPro.name}}</span>
+                            </div>-->
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="show-case">
+    <!--<section class="cd-horizontal-timeline" :style="'margin: 200px 0 ' + (50 * heightRate) + 'px 0;'">-->
+    <section class="cd-horizontal-timeline" style="margin: 10% 0px 0 0;">
+        <div class="events-content" :style="'height: ' + (240 * heightRate) + 'px; max-height: 260px;'">
+            <ol style="vertical-align: bottom;">
+                <li :id="eveContent.id" :key="eveContent.id" v-for="(eveContent, index) in eveContents"
+                    :class="{selected: index === 0}"
+                    style="color: black;vertical-align: bottom;" :data-date="eveContent.date">
+                    <em :style="'margin-bottom: ' + (30 * heightRate) + 'px;font-size: 2.5rem;'" v-text="eveContent.year"></em>
+                    <p style="color: black;" v-html="eveContent.content"></p>
+                </li>
+            </ol>
+
+        </div>
+
+        <div class="timeline">
+            <div class="events-wrapper">
+                <div class="events">
+                    <span class="filling-line" aria-hidden="true"></span>
+                    <ol>
+                        <li><a href="#0" v-for="(eveContent, index) in eveContents" :class="{selected: index === 0}"
+                               style="color: black;"
+                               :data-date="eveContent.date" v-text="eveContent.year"></a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <ul class="cd-timeline-navigation">
+                <li><a href="#0" class="prev inactive">Prev</a></li>
+                <li><a href="#0" class="next">Next</a></li>
+            </ul>
+        </div>
+    </section>
+</template>
+
+<template id="news-activity">
+    <div class="newsList J_newsList  newsNewModuleStyle_four " id="newsList629" _showsetting="0" newslisttype="6"
+         scroll="0">
+        <!--newsname="新时代、新征途、新起点周年庆典"-->
+        <div v-for="(newsActi, index) in newsActiList" :key="newsActi.id" topclassname="top1" topswitch="on" newsid="6"
+             class="J_newsListLine line J_nHover   fk-newsLineHeight  newsListLine1"
+             :style="'height: ' + (321 * heightRate) + 'px; width: 30%;margin: 15px ' + (16 * widthRate) + 'px;'">
+            <table id="lineBody6" class="J_lineBody lineBody"
+                   cellpadding="0" cellspacing="0">
+                <tbody>
+                <tr id="module629tr6">
+                    <td class="mixNewsTitle newsListLineBodyTd"
+                        valign="top">
+                        <div class="J_articlePhotoBox articlePhotoBox"
+                             newid="6" newsflag="10"><a
+                                class="J_articlePicHref articlePicLink1"
+                                target="_blank"
+                                :style="'width: 100%;height: ' + (230 * heightRate) + 'px;'">
+                            <div class="cutImgPanel J_cutImgPanel newsListCutImgPanel2"
+                                 style="bottom:0.0px;"></div>
+                            <img _defimg="true"
+                                 class="J_newsListPic newsPic newsListNewsPic1"
+                                 alt="att_image" title=""
+                                 :src="newsActi.image"
+                                 :style="'width: 100%;height: ' + (230 * heightRate) + 'px;'"></a>
+                        </div>
+                        <div class="J_articleDesc newsListArticleDesc">
+                            <div class="J_newsTitle newsTitle newsListNewsTitle1"
+                                 style="width: 100%;margin: 35px 18px 19px;">
+                                <div class="J_newsListTopFlag  newsListTopFlag1">
+                                    <a class="no-mixNewsStyleTitleTip"
+                                       target="_blank"></a></div>
+                                <a hidefocus="true" :style="'font-size: ' + (14 * heightRate) + 'px;'"
+                                   target="_blank" :title="newsActi.theme"
+                                   class="J_mixNewsStyleTitle fk-newsListTitle mixNewsStyleTitle "
+                                   mix="1" v-text="webVue.isEn ? newsActi.theme : newsActi.theme_cn"></a></div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+</template>
+
+<template id="our-sponsor">
+    <!-- margin: 150px 0 0 0-->
+    <div class="swiper-container-sponsor banner" style="background: none;">
+        <!--margin-left: -1059px;-->
+        <!--width: 2150px; -->
+        <div class="swiper-wrapper demo0 J_photoForms J_listPhotosMarquee" id="demo0436"
+             :style="'margin-left: ' + ((-130) * widthRate) + 'px;'">
+            <div class="swiper-slide" v-for="(sponsor, index) in sponsorList" :key="sponsor.id" photodisc=""
+                 photoname="" photoid="index"
+                 class="J_photoForm photoMarqueeForm"
+                 :style="'margin-right: ' + (30 * heightRate) + 'px; padding: 0px; margin-bottom: 0px; height: ' + (86 * heightRate) + 'px;'"
+                 faiwidth="165" faiheight="84">
+                <div class="insert_desc_warp_class">
+                    <!--width:170px;-->
+                    <div :id="sponsor.id"
+                         photoname="" photodisc="" check="3"
+                         tmppic="AD0I98nwCRAEGAAgjovl7QUoqIj_igUwpQE4VA"
+                         _lide="" class="J_listPhotoImg imgDiv"
+                         :style="'height: ' + (86 * heightRate) + 'px;'">
+                        <table cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <!--overflow: hidden;-->
+                                    <div class="J_photoImgPanel"
+                                         style="position: relative; ">
+                                        <a :href="'./sponsor-pdf.html?'+ dataPath + sponsor.link"><img
+                                                class="J_photoImg photoImg"
+                                                picsca="2"
+                                                :style="'margin-top: ' + ((-70) * heightRate) + 'px;'"
+                                                :src="sponsor.image"
+                                                iwidth="165" iheight="100"
+                                                alt="" title="">
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    $(document).ready(function(){
+        selectedNav('1');
+
+    });
+
+    /*banner*/
+    Vue.component('my-banner', {
+        template: '#my-banner',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                banners: [],
+                swiper: null
+            }
+        },
+        methods: {
+            getBanners() {
+                this.$http.get('./data/index.json').then(res => {
+                    this.banners = res.body.bannerList;
+                    Vue.nextTick(() => {
+                        this.swiper = new Swiper('.swiper-container', {
+                            spaceBetween: 30 * this.widthRate,
+                            centeredSlides: true,
+                            autoplay: {
+                                delay: 6000,
+                                disableOnInteraction: false,
+                            },
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+                        });
+                    })
+
+                })
+            }
+        },
+        created() {
+            this.getBanners()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.swiper
+        }
+    })
+
+    Vue.component('about-us', {
+        template: '#about-us',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                aboutUsList: []
+            }
+        },
+        methods: {
+            getUsList() {
+                this.$http.get('./data/index.json').then(res => {
+                    this.aboutUsList = res.body.aboutUsList;
+                })
+            }
+        },
+        created() {
+            this.getUsList()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.aboutUsList
+        }
+    })
+
+    Vue.component('major-project', {
+        template: '#major-project',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                majorProjects: [],
+                isPc: os.isPc,
+                mpStyle: {}
+            }
+        },
+        methods: {
+            getMajorProjects() {
+                this.$http.get('./data/index.json').then(res => {
+                    this.majorProjects = res.body.majorProjects;
+                    if (this.isPc) {
+                        this.mpStyle = {
+                            position: 'relative',
+                            /*width: '24%',*/
+                            /*margin: (0 * this.heightRate) + 'px 0 60px ' + (33 * this.widthRate) + 'px',*/
+                            margin: '9% 2.5% 6%',
+                            float: 'left'
+                        }
+                    } else {
+                        this.mpStyle = {
+                            position: 'relative',
+                            /*width: '36%',
+                            margin: (0 * this.heightRate) + 'px 0 60px ' + (88 * this.widthRate) + 'px',*/
+                            margin: '9% 8% 6% 6%',
+                            float: 'left'
+                        }
+                    }
+                })
+            }
+        },
+        created() {
+            this.getMajorProjects()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.majorProjects
+        }
+    })
+
+    Vue.component('news-activity', {
+        template: '#news-activity',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                newsActiList: []
+            }
+        },
+        methods: {
+            getNewsActiList() {
+                this.$http.get('./data/index.json').then(res => {
+                    this.newsActiList = res.body.newsActiList;
+                })
+            }
+        },
+        created() {
+            this.getNewsActiList()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.newsActiList
+        }
+    })
+
+    Vue.component('our-sponsor', {
+        template: '#our-sponsor',
+        data() {
+            return {
+                sponsorList: [],
+                swiper: null,
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                dataPath: baseURL+ "data/pdf/"
+            }
+        },
+        methods: {
+            getSponsorList() {
+                this.$http.get('./data/index.json').then(res => {
+                    this.sponsorList = res.body.sponsorList;
+                    Vue.nextTick(() => {
+                        this.swiper = new Swiper('.swiper-container-sponsor', {
+                            //spaceBetween: 30,
+                            centeredSlides: true,
+                            speed: 6000,
+                            loop: true,
+                            breakpoints: {
+                                320: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 10
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 20
+                                },
+                                1280: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 30
+                                }
+                            },
+                            autoplay: {
+                                delay: 20,
+                                disableOnInteraction: true,
+                            },
+                            /*pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                                dynamicBullets: true,
+                                dynamicMainBullets: 2
+                            },*/
+                            /*navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },*/
+                        });
+                    })
+                })
+            }
+        },
+        created() {
+            this.getSponsorList()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.sponsorList
+            delete this.swiper
+        }
+    })
+
+    webVue = new Vue({
+        el: '#web',
+        data: {
+            widthRate: document.body.clientWidth / 1390,
+            heightRate: window.screen.availHeight / 728,
+            isPc: os.isPc,
+            isEn: isEn,
+            defTitle: "What's on",
+            web_layout: {},
+            aStyle: {},
+            showcaseHandle: null
+        },
+        methods: {
+            getData: function () {
+                if (this.isPc){
+                    this.aStyle = {
+                        height: '800px'
+                    };
+                        /*background: 'rgb(179, 179, 181)',*/
+                    this.web_layout = {
+                        top: '51px',
+                        width: '100%',
+                        overflowX: 'hidden',
+                        overflowY: 'scroll',
+                    }
+                    /*let html = document.getElementsByTagName('html')[0];
+                    html.style.width = (document.body.clientWidth - 20) + 'px';*/
+                } else {
+                    this.aStyle = {
+                        height: '1500px'
+                    };
+                    this.web_layout = {
+                        top: '51px',
+                        width: '100%',
+                        /*background: 'rgb(179, 179, 181)',
+                        height: '1200px',*/
+                        /*overflow: 'scroll'*/
+                        overflowX: 'hidden'
+                    }
+                }
+                getShowcaseComp(this.isEn);
+            }
+        },
+        mounted() {
+            //getShowcaseComp(this.isEn);
+        },
+        watch: {
+            isEn: function (nVal, oVal) {
+                console.log('watch isEn, nVal: ' + nVal + ", oVal: " + oVal);
+                /*tryInit();*/
+                /*this.$emit('showcaseHandle', nVal)*/
+                getShowcaseComp(nVal);
+            }
+        },
+        created() {
+            this.getData();
+        }
+    })
+
+</script>
+</body>
+
+</html>

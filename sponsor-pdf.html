@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="__noGmain g_html" style="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="shortcut icon" href="data:;base64,=">
+    <meta name="description" content="">
+    <meta itemprop="name" content="">
+    <meta name="keywords" content="">
+
+    <link type="text/css" href="./css/siteBase2.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/base2.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/dist/module.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/component/swiper.min.css">
+    <link type="text/css" href="./css/fkTheme.min.css" rel="stylesheet">
+    <link id="sysnavlink" type="text/css" href="./css/fkNav.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/floatBtn1.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/jzcusstyle.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./js/jquery-core.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-mousewheel.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-core.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-parallax.min.js"></script>
+    <script type="text/javascript" src="./js/include.min.js"></script>
+
+    <style type="text/css" id="styleWebSite">
+        /*custom define*/
+        .pro-image-show-line1 {
+            width: 100%;
+            height: 277px;
+        }
+
+        .pro-image-show-line2-left {
+            width: 100%;
+            max-height: 490px;
+        }
+
+        .pro-image-show-line2-right {
+            width: 100%;
+        }
+
+        #bannerV2 .fk-inBannerListZone {
+            width: 1200px;
+        }
+
+        #bannerV2 .fk-inBannerListZone {
+            margin-left: -600px;
+        }
+    </style>
+    <style type="text/css" id="styleBannerBg">
+        .webBannerTable {
+        background: none !important;
+    }
+
+    .webBanner {
+        background: none !important;
+    }
+    </style>
+    <style type="text/css" id="stylebacktotop">
+        .fk_siteBackToTop {
+        position: fixed;
+    }
+
+    .fk_siteBackToTop {
+        width: 50px;
+    }
+
+    .fk_siteBackToTop {
+        height: 50px;
+    }
+
+    .fk_siteBackToTop {
+        margin: 1px;
+    }
+
+    .go_back {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        font-size: 18px;
+        z-index: 99;
+        border-radius: 50%;
+    }
+    </style>
+</head>
+
+<body class="g_body  g_locale2052  g_cusSiteWidth  bUserWrap">
+<div id="demo"></div>
+
+<div id="" class="go_back" title="go back" onclick="goBack();">
+    <img src="./images/common/goBack.png" style="width: 70%;cursor: pointer;">
+</div>
+
+<!--toTop-->
+<div id="siteBackToTop_small_box" class="fk_siteBackToTop" title="To Top" _style="secondStyle_04"
+     style="right: 57px; bottom: 10px; display: block;" onclick="backToTop();">
+</div>
+
+<link rel="stylesheet" href="./js/component/horizontal-timeline/css/reset.css">
+<link rel="stylesheet" href="./js/component/horizontal-timeline/css/style.css">
+<link rel="stylesheet" href="./component/pdfh5/css/style.css" />
+<link rel="stylesheet" href="./component/pdfh5/css/pdfh5.css" />
+
+<script type="text/javascript" src="./js/component/swiper.min.js"></script>
+<script type="text/javascript" src="./js/component/vue-2.4.2.min.js"></script>
+<script type="text/javascript" src="./js/component/vue-resource-1.5.0.min.js"></script>
+<script src="./js/component/horizontal-timeline/js/modernizr.js"></script>
+<script src="js/component/horizontal-timeline/js/jquery-1.10.2-min.js"></script>
+<script src="./js/component/horizontal-timeline/js/jquery.mobile.custom.min.js"></script>
+<script src="./js/component/horizontal-timeline/js/main.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script src="./component/pdfh5/js/pdf.js" type="text/javascript" charset="utf-8"></script>
+<script src="./component/pdfh5/js/pdf.worker.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="./component/pdfh5/js/pdfh5.js" type="text/javascript" charset="utf-8"></script>
+
+<template id="my-banner">
+    <div class="J_bannerItem f-bannerItem" title="" :style="bStyle">
+        <div id="fk-inBannerListZone-0" _sys="1"
+             _banid="AD0I98nwCRAEGAAggaHl7QUo3b6wrwIwgA84rAI" style="text-align: left;"
+             class="elemZone elemZoneModule fk-moduleZone fk-inBannerListZone forms sideForms J_moduleZone ">
+            <div class="fk-inBannerListZoneBg fk-elemZoneBg J_zoneContentBg elemZoneBg"></div>
+        </div>
+    </div>
+</template>
+
+<script>
+    //当前默认优先获取浏览器地址栏？file=后面的地址，如果地址栏没有，再拿配置项的pdfurl或者data来渲染pdf
+    //优先顺序：  ？file= > pdfurl > data
+    var pdfh5 = new Pdfh5('#demo', {
+        pdfurl: location.href.split('?')[1]
+    });
+
+    //配置项参数 type:"ajax" 请求方式为ajax，默认fetch
+    // var pdfh5 = new Pdfh5('#demo', {
+    //     pdfurl: "./default.pdf",
+    //     type:"ajax"
+    // });
+
+    pdfh5.on("ready", function () {
+        console.log("总页数：" + this.totalNum)
+    })
+    //监听pdf渲染过程，currentPageDom当前加载的pdf的dom,currentNum当前加载的pdf页数,
+    pdfh5.on("render", function (currentNum, time, currentPageDom) {
+        console.log("当前渲染页：" + currentNum + "，耗时：" + time + "毫秒")
+    })
+    //监听完成事件，加载失败、渲染成功都会触发
+    pdfh5.on("complete", function (status, msg, time) {
+        console.log("状态：" + status + "，信息：" + msg + "，耗时：" + time + "毫秒，总页数：" + this.totalNum)
+    })
+    //监听pdf渲染成功
+    pdfh5.on("success", function (time) {
+        console.log("加载完成，耗时" + time + "毫秒")
+    })
+
+    Vue.component('my-banner', {
+        template: '#my-banner',
+        data() {
+            return {
+                banner: {},
+                bStyle: {}
+            }
+        },
+        methods: {
+            getBanner() {
+                this.$http.get('./data/ourProject.json').then(res => {
+                    this.banner = res.body.banner;
+                    this.bStyle = {
+                        backgroundImage: "url(" + this.banner.image + ")",
+                        backgroundRepeat: "no-repeat",
+                        height: "230px",
+                        backgroundPosition: "70% 70%",
+                        overflow: "hidden",
+                        display: "block",
+                        outline: "none",
+                        margin: "0px auto",
+                        position: "relative",
+                        zIndex: "1",
+                        backgroundSize: "cover"
+                    }
+                })
+            }
+        },
+        created() {
+            this.getBanner()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.banner;
+        }
+    })
+
+    new Vue({
+        el: '#web'
+    })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://fkwhcm10.demo.webportal.top/col.jsp?id=101 -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="__noGmain g_html" style="">
+<head>
+    <!--<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">-->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="shortcut icon" href="data:;base64,=">
+    <meta name="description" content="">
+    <meta itemprop="name" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <title>Showcase</title>
+
+    <link type="text/css" href="./css/siteBase2.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/base2.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/dist/module.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/component/swiper.min.css">
+    <link type="text/css" href="./css/fkTheme.min.css" rel="stylesheet">
+    <link id="sysnavlink" type="text/css" href="./css/fkNav.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/newSearchBoxStyle.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/floatBtn1.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/site/poshytipAndmCustomScrollbar.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/jzcusstyle.css" rel="stylesheet">
+    <link type="text/css" href="./css/fontsIco.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./js/jquery-core.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-mousewheel.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-core.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-parallax.min.js"></script>
+    <script type="text/javascript" src="./js/include.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+
+    <style type="text/css" id="styleWebSite">
+        /*custom define*/
+        .pro-image-show-line1 {
+            width: 100%;
+            height: 277px;
+        }
+
+        .pro-image-show-line2-left {
+            width: 100%;
+            /*max-height: 490px;*/
+        }
+
+        .pro-image-show-line2-right {
+            width: 100%;
+        }
+
+        #bannerV2 .fk-inBannerListZone {
+            width: 1200px;
+        }
+
+        #bannerV2 .fk-inBannerListZone {
+            margin-left: -600px;
+        }
+
+        .font-titleShowCase {
+        !important;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: normal;
+        }
+
+        .swiper-container-video {
+            --swiper-navigation-size: 20px;
+        }
+    </style>
+    <style type="text/css" id="styleBannerBg">
+        .webBannerTable {
+            background: none !important;
+        }
+
+        .webBanner {
+            background: none !important;
+        }
+    </style>
+    <style type="text/css" id="stylebacktotop">
+        .fk_siteBackToTop {
+            position: fixed;
+        }
+
+        .fk_siteBackToTop {
+            width: 50px;
+        }
+
+        .fk_siteBackToTop {
+            height: 50px;
+        }
+
+        .fk_siteBackToTop {
+            margin: 1px;
+        }
+
+        .fk_siteBackToTop {
+            background-image: url(./images/common/toTop-1.png);
+        }
+    </style>
+
+</head>
+
+<!--<body class="body_layout" style="background: rgb(179, 179, 181);">
+<div id="web" class="g_web" style="top: 51px; width: 100%;background: rgb(179, 179, 181);">-->
+<body style="">
+<div id="web" class="" :style="web_layout">
+    <!--header page-->
+    <include src="./header.html"></include>
+
+    <!--banner area-->
+    <div class="webBannerTable J_webBannerTable">
+        <div class="fk-moduleZoneWrap" style="background-color: white;">
+            <div id="webBanner" class="webBanner">
+                <div class="bannerTable">
+                    <div class="bannerLeft"></div>
+                    <div class="bannerCenter">
+                        <div style="visibility:hidden;" class="fk-inBannerListZone-tmp forms">
+                        </div>
+                        <div class="bannerTop"></div>
+                        <div id="bannerV2" class="banner extBanner" fbheight="300" defaultwidth="0"
+                             style="height: 350px; background: none; overflow: hidden;">
+                            <div class="imageSwitchShowName"><span class="spanHiddenName spanShowName"></span></div>
+                            <div class="imageSwitchBtnArea clearFix"
+                                 style="position: absolute; z-index: 3; display: none; width: 19px;"><a
+                                    class="imageSwitchBtn imageSwitchBtnSel"><span>1</span></a></div>
+                            <div></div>
+                            <div class="switchGroup switchGroup_bannerV2 "
+                                 style="width: 100%; position: relative; height: 300px; overflow: hidden; margin: 0px auto;">
+                                <div class="J_billboardItem numImg" id="numImg0"
+                                     style="position: absolute; width: 100%;">
+                                    <my-banner></my-banner>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bannerRight"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullmeasureTopForms"
+         class="fullmeasureContainer forms fk-fullmeasureForms fullmeasureForms fullmeasureTopForms">
+             <!--:style="'height: ' + (900 * heightRate) + 'px;'" -->
+        <div id="module551" _indexclass="formIndex1" _moduletype="1" _modulestyle="109" _moduleid="551"
+             class="form form551 formIndex1 formStyle109 fk-formFullmeasure " title="" _sys="0" _banid=""
+             :style="'height: ' + (1100 /heightRate + 1100 * (heightRate - 1)) + 'px;'"
+             _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+             _infullmeasurepack="0" _intabpack="0" _autoheight="0" _global="false" _independent="false"
+             data-scrollbar="0" fmslidestyle="0" fmpage="1" iscarousel="0" displaytime="4" carouselspeed="1"
+             cuscarousel="0">
+            <div class="fillContentRelative"
+                 style="position:absolute; z-index:-1; height:100%; width:100%;display:none;"></div>
+            <div style="position: static;"
+                 class="fullmeasureOuterContentPage fullmeasureOuterContentPage1 J_fullmeasurePageShow" page="1">
+                <div class="fullmeasureOuterContentBg fullmeasureOuterContentBg551 fullmeasureStyle12"></div>
+                <div class="fullmeasureOuterContent fullmeasureOuterContent551">
+                    <div class="fullmeasureContent fullmeasureContent551" id="fullmeasureContent551_1" moduleid="551" style="width: 85%;margin: 0 0 0 10%;">
+                        <div class="fullmeasureContentBg fullmeasureContentBg551"></div>
+                        <div class="J_zoneEnableAll J_fullmeasurePackContent elemZone elemZoneModule fk-formPack"
+                             moduleid="551" id="fk-inFullmeasureListZone551-1">
+                            <div class="fk-elemZoneBg J_zoneContentBg"></div>
+
+                            <!--current location area-->
+                            <div id="module511" bannertitle="文本" _indexclass="" _moduletype="1" _modulestyle="86"
+                                 _moduleid="511" class="form form511 formStyle86 siteEditor " title="" _sys="0"
+                                 _banid="" style="position:absolute;top:21px;left:11px;" _side="0"
+                                 _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                                 _infullmeasurepack="551" _intabpack="0" _autoheight="0" _global="false"
+                                 _independent="false" data-scrollbar="0">
+                                <div class="lightModuleOuterContent lightModuleOuterContent511">
+                                    <div class="fk-editor simpleText   ">
+                                        <span :style="'font-size: ' + (14 * heightRate) +'px;'" v-text="isEn ? currPosition.en : currPosition.cn"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--split graph-->
+                            <div id="module554" bannertitle="图片" _indexclass="" _moduletype="1" _modulestyle="79"
+                                 _moduleid="554" class="form form554 formStyle79" title="" _sys="0" _banid=""
+                                 :style="'position:absolute;top: ' + (45 * heightRate) + 'px;left:11px;width: 100%;'" _side="0" _intab="0"
+                                 _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0" _infullmeasurepack="551"
+                                 _intabpack="0" _autoheight="0" _global="false" _independent="false" data-scrollbar="0">
+                                <div class="lightModuleOuterContent lightModuleOuterContent554">
+                                    <div class="floatImg floatImg_J floatImg_J_special"><a hidefocus="true"
+                                                                                           class="J_floatImg_jump f_floatImg_jump ">
+                                        <div class="floatImgWrap">
+                                            <div class="forMargin"><img id="float_img_554" style="width: 90%;"
+                                                                        class="lazyload_transparent float_in_img J_defImage"
+                                                                        src="./images/common/split-line.png"
+                                                                        alt="AD0I98nwCRAEGAAgqabl7QUo1r_1SDCwCTgB"
+                                                                        data-imgloaded="true"></div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--left graph area-->
+                                 <!--:style="'position: absolute; top: ' + (60 * heightRate) + 'px; left: -5px; width: 50%; height: ' + (300 * heightRate) + 'px;'"-->
+                            <div id="module558" _indexclass="" _moduletype="1" _modulestyle="88" _moduleid="558"
+                                 class="form form558 formStyle88" title="" _sys="0" _banid=""
+                                 :style="'position: absolute; top: ' + (60 * heightRate) + 'px; left: -5px; width: 50%; height: 30%;'"
+                                 _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                                 _infullmeasurepack="551" _intabpack="0" _autoheight="0" _global="false"
+                                 _independent="false" data-scrollbar="0">
+                                <div class="formTop formTop558">
+                                    <div class="left"></div>
+                                    <div class="center"></div>
+                                    <div class="right"></div>
+                                </div>
+                                <div class=" formMiddle formMiddle558" style="height:401px; ">
+                                    <div class="formMiddleLeft formMiddleLeft558"></div>
+                                    <div class="formMiddleCenter formMiddleCenter558 " valign="top">
+                                        <div class="formMiddleContent formMiddleContent558 fk-formContentOtherPadding"
+                                             tabstyle="0" style="height: 391px; overflow-y: hidden;">
+                                            <div class="listPhotosList">
+                                                <div class="clearfloat"></div>
+                                                <div id="photoForms558" style="" class="J_photoForms photoForms"
+                                                     picwidth="560" picheight="380">
+                                                    <div photoid="0" photoname="" photodisc=""
+                                                         class="J_photoForm photoForm"
+                                                         style="width: 100%; height: 380px;" faiwidth="560"
+                                                         faiheight="382">
+                                                        <div class="J_sortDiv insert_desc_warp_class ">
+                                                            <div id="photoListAD0I98nwCRAEGAAgvMrl7QUomP-HswEwsAQ4-gI"
+                                                                 photoname="" photodisc=""
+                                                                 check="2"
+                                                                 tmppic="AD0I98nwCRAEGAAgvMrl7QUomP-HswEwsAQ4-gI"
+                                                                 _lide="AGYIAhIA" class="J_listPhotoImg imgDiv"
+                                                                 style="width:65%;height: 80%;margin: 4% 0 0 -3%;">
+                                                                <table cellpadding="0" cellspacing="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td>
+
+                                                                            <left-image></left-image>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clearfloat"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="formMiddleRight formMiddleRight558"></div>
+                                </div>
+                                <div class="formBottom formBottom558">
+                                    <div class="left left558"></div>
+                                    <div class="center center558"></div>
+                                    <div class="right right558"></div>
+                                </div>
+                                <div class="clearfloat clearfloat558"></div>
+                            </div>
+
+                            <!-- right text area-->
+                            <div id="module557" ssr="true" _moduletype="1" _modulestyle="116" _moduleid="557" title=""
+                                 _sys="0" _banid="" _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0"
+                                 _inpopupzone="0" _infullmeasurepack="551" _intabpack="0" _autoheight="0"
+                                 data-scrollbar="0" data-server-rendered="true" class="form form557 formStyle116"
+                                 :style="'position: absolute; top: ' + (7 * heightRate) + '%; left: ' + (30) + '%; width: 58%; height: 24%;'">
+                                 <!--:style="'position: absolute; top: 10%; left: 33%; width: 58%; height: ' + (300 * heightRate) + 'px;'">-->
+                                <div class="formTop formTop557">
+                                    <div class="left"></div>
+                                    <div class="center"></div>
+                                    <div class="right"></div>
+                                </div> <!---->
+                                <!--style="height:398px;"-->
+                                <div class="formMiddle formMiddle557" >
+                                    <div class="formMiddleLeft formMiddleLeft557"></div>
+                                    <div valign="top" class="formMiddleCenter formMiddleCenter557"><!---->
+                                        <div tabstyle="0"
+                                             class="formMiddleContent formMiddleContent557 fk-formContentOtherPadding"
+                                             style="overflow-y: hidden;">
+                                             <!--style="height: 400px; overflow-y: hidden;">-->
+                                            <div class="news_list_wrap">
+                                                <div class="m_news m_new_padding_5" style="margin: 0 0;">
+                                                    <div class="m_news_wrap">
+                                                        <div class="m_row_class m_news_5"><!---->
+                                                            <right-text></right-text>
+                                                        </div>
+                                                        <section><i class="m_news_arrow news_left_arrow"
+                                                                    style="display:none;">
+                                                            <svg class="slider_svg">
+                                                                <use xlink:href="#icon_arrow"></use>
+                                                            </svg>
+                                                        </i> <i class="m_news_arrow news_right_arrow"
+                                                                style="display:none;">
+                                                            <svg class="slider_svg">
+                                                                <use xlink:href="#icon_arrow1"></use>
+                                                            </svg>
+                                                        </i></section>
+                                                    </div>
+                                                </div> <!----> <!----></div>
+                                        </div>
+                                    </div>
+                                    <div class="formMiddleRight formMiddleRight557"></div>
+                                </div>
+                                <div class="formBottom formBottom557">
+                                    <div class="left"></div>
+                                    <div class="center"></div>
+                                    <div class="right"></div>
+                                </div>
+                                <div class="clearfloat"></div>
+                            </div>
+
+                            <!--below list area-->
+                            <!--height: ' + (100 * heightRate + 600) + 'px;-->
+                            <div id="module556" _indexclass="" _moduletype="1" _modulestyle="7" _moduleid="556"
+                                 class="form form556 formStyle7" title="" _sys="0" _banid=""
+                                 :style="'position: absolute; top: ' + (10 * heightRate + 18) + '%; left: 2%; width: 100%; '"
+
+                                 _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                                 _infullmeasurepack="551" _intabpack="0" _autoheight="0" _global="false"
+                                 _independent="false" data-scrollbar="0">
+                                <div class="formTop formTop556">
+                                    <div class="left"></div>
+                                    <div class="center"></div>
+                                    <div class="right"></div>
+                                </div>
+                                <br/><br/>
+                                <!--<div class="formBanner formBanner556" style="">
+                                    <div class="left left556"></div>
+                                    <div class="center center556" valign="top">
+                                        <div class="formBannerTitle formBannerTitle556">
+<span class="titleLeft titleLeft556" valign="top">
+</span>
+                                            <div class="titleCenter titleCenter556" valign="top">
+                                                <div class="titleText titleText556"><span
+                                                        class="bannerNormalTitle fk_mainTitle mainTitle mainTitle556">文章列表</span>
+                                                </div>
+                                            </div>
+                                            <span class="titleRight titleRight556" valign="top">
+</span>
+                                        </div>
+                                    </div>
+                                    <div class="right right556"></div>
+                                </div>-->
+                                <div class=" formMiddle formMiddle556" style="">
+                                    <div class="formMiddleLeft formMiddleLeft556"></div>
+                                    <div class="formMiddleCenter formMiddleCenter556 " valign="top">
+                                        <div class="formMiddleContent formMiddleContent556 fk-formContentOtherPadding"
+                                             tabstyle="0" style="overflow-y: hidden;">
+                                            <div>
+                                                <below-text></below-text>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="formMiddleRight formMiddleRight556"></div>
+                                </div>
+                                <div class="formBottom formBottom556">
+                                    <div class="left left556"></div>
+                                    <div class="center center556"></div>
+                                    <div class="right right556"></div>
+                                </div>
+                                <div class="clearfloat clearfloat556"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfloat clearfloat551"></div>
+            </div>
+        </div>
+        <wbr style="display:none;">
+    </div>
+
+    <!--toTop-->
+    <div class="site_to_top" title="To Top" onclick="backToTop();"></div>
+
+    <!--footer page-->
+    <include src="./footer.html"></include>
+    <div class="clearfloat"></div>
+</div>
+
+<!--toTop-->
+<!--<div id="siteBackToTop_small_box" class="fk_siteBackToTop" title="To Top" _style="secondStyle_04"
+     style="right: 57px; bottom: 10px; display: block;" onclick="backToTop();">
+</div>-->
+
+<!--
+<div class="floatLeftTop manageTranTop" style="top: 51px;">
+    <div id="floatLeftTopForms" class="forms sideForms floatForms">
+
+    </div>
+</div>
+<div class="floatRightTop manageTranTop" style="top: 51px;">
+    <div id="floatRightTopForms" class="forms sideForms floatForms">
+
+    </div>
+</div>
+<div class="floatLeftBottom">
+    <div id="floatLeftBottomForms" class="forms sideForms floatForms">
+
+    </div>
+</div>
+<div class="floatRightBottom">
+    <div id="floatRightBottomForms" class="forms sideForms floatForms">
+
+    </div>
+</div>
+<div id="popupLevel" class="popupLevel">
+    <div id="popupLevelWrap" class="popupLevelWrap">
+        <div id="popupLevelEditToolArea" class="popupLevelEditToolArea">
+            <div id="popupLevelEditPanel" class="popupLevelEditPanel"></div>
+            <div id="popupLevelEditTool" class="popupLevelEditTool"></div>
+        </div>
+        <div id="popupLevelForms" class="forms sideForms popupLevelForms"></div>
+    </div>
+</div>
+-->
+
+<div id="bgMusic" class="bgMusic"></div>
+
+<audio controls="controls" style="display: none;"></audio>
+<link rel="stylesheet" href="./js/component/horizontal-timeline/css/reset.css">
+<link rel="stylesheet" href="./js/component/horizontal-timeline/css/style.css">
+
+<script type="text/javascript" src="./js/component/swiper.min.js"></script>
+<script type="text/javascript" src="./js/component/vue-2.4.2.min.js"></script>
+<script type="text/javascript" src="./js/component/vue-resource-1.5.0.min.js"></script>
+<script src="./js/component/horizontal-timeline/js/modernizr.js"></script>
+<script src="js/component/horizontal-timeline/js/jquery-1.10.2-min.js"></script>
+<script src="./js/component/horizontal-timeline/js/jquery.mobile.custom.min.js"></script>
+<script src="./js/component/horizontal-timeline/js/main.js"></script>
+
+<template id="my-banner">
+    <div class="J_bannerItem f-bannerItem" title="" :style="bStyle">
+        <div id="fk-inBannerListZone-0" _sys="1"
+             _banid="AD0I98nwCRAEGAAggaHl7QUo3b6wrwIwgA84rAI" style="text-align: left;"
+             class="elemZone elemZoneModule fk-moduleZone fk-inBannerListZone forms sideForms J_moduleZone ">
+            <div class="fk-inBannerListZoneBg fk-elemZoneBg J_zoneContentBg elemZoneBg"></div>
+        </div>
+    </div>
+</template>
+
+<template id="left-image">
+    <!--width: 560px; height: 380px; -->
+    <div class="J_photoImgPanel" style="position: relative; overflow: hidden;">
+        <a v-show="imageShow == true" hidefocus="true" target="_blank" _lide="AGYIAhIA">
+            <img picsca="2" class="J_photoImg photoImg" :src="leftImg.image"
+                 style="width: 100%; margin-top: -1px; cursor: pointer;min-height: 180px;"
+                 @mouseenter="nameShow=true;" @mouseout="nameShow=false;">
+            <!--@mouseenter="videoShow=true; imageShow=false;"-->
+        </a>
+
+        <!--show name-->
+        <div v-show="nameShow == true" class="imageEffects imageEffectsAnimate_Half imageEffects_HalfMaks"
+             style="bottom: 0px; left: 10%; width: 80%; height: 40px; cursor: pointer; opacity: 1;background: url(./images/index/background-Effetc-maks.png) repeat;"
+             fk_fixed="1">
+            <div class="props photoHalfMask">
+                <div class="propList g_specialClass">
+                    <div class="photoName g_specialClass"
+                         style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3;"></div>
+                    <div class="photoDisc" style=" text-align:center;margin: 6px 0 0 0;" v-text="webVue.isEn ? leftImg.name.en : leftImg.name.cn"></div>
+                </div>
+            </div>
+        </div>
+
+        <div v-show="nameShow == true" class="imageEffects imageEffectsAnimate_Half imageEffects_HalfMaks" @mouseenter="nameShow=true;"
+                style="bottom: 10%; left: 10%; width: 100%; height: 100%; transform:scale(0.3); cursor: pointer; opacity: 1;
+                    background: url(./images/common/play-6.png) no-repeat;" fk_fixed="1" onclick="jumpToPage('video-play.html')">
+        </div>
+
+        <!--play videos-->
+        <!--v-show="playVideos == true"-->
+            <!--<div class="swiper-pagination"></div>-->
+        <!--<div class="swiper-container-video" v-show="videoShow == true" @mouseout="imageShow=true;videoShow=false;"
+             style="position: absolute;bottom: 30px;left: 0px;width: 560px;height: 382px;">
+            <div class="swiper-wrapper">
+                <video class="swiper-slide" v-for="video in leftImg.videos" :poster="leftImg.image" :id='video.id'
+                       :src="video.url" controls playsinline webkit-playsinline preload='none'>
+                </video>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>-->
+
+    </div>
+</template>
+
+<template id="right-text">
+    <!--<div class="m_news_list m_news_col_1" :style="'margin: 0 0 0 13px; height: ' + (200 * heightRate) + 'px;'">-->
+    <div class="m_news_list m_news_col_1" style="margin: 0 0 0 13px;">
+        <div class="m_news_content" v-for="text in rightTexts" :style="'height: ' + (23 * heightRate) + '%;'">
+            <!--<div class="news_time time_style_wrap time_style_1">
+                <div class="style_time_wrap">
+                    <div class="time_wrap"><p class="big_time">
+                        30
+                    </p>
+                        <p class="small_time">
+                            2019-10
+                        </p></div>
+                </div>
+            </div>-->
+            <!--<div class="time_line_wrap show_time_line"><i
+                    class="ie_time_line"></i> <i
+                    class="time_line"></i> &lt;!&ndash;&ndash;&gt;</div> &lt;!&ndash;&ndash;&gt;-->
+            <div id="m_news_info5" class="m_news_info">
+                <div class="news_title"><a :style="'height: ' + (38 * heightRate) +'px;line-height: ' + (16 * heightRate) + 'px;'"
+                        target="_blank"
+                        class="article_title"><span
+                        class="title_content"
+                        style="font-size: 20px;font-weight: normal;" v-html="webVue.isEn ? text.title.en : text.title.cn"></span></a></div>
+                <!--<div rowindex="0" index="0" class="news_summary">
+                    乘着十一月的风，我们在美丽的青岛举行了一年一度的第十四届“馆藏与出版”论坛全国图情界的专家与学者汇集一堂共同探讨新...
+                </div>-->
+            </div>
+            <!--<div class="J_separatorLine separatorLine g_separator  pic-separatorLine " :style="'margin: 0 0 ' + (15 * heightRate) + 'px;'"></div>-->
+            <div class="J_separatorLine separatorLine g_separator  pic-separatorLine " style="margin: 0 0 1% 0;"></div>
+            <!--<div class="row_line_wrap col_one">
+                <div class="m_row_line"></div>
+            </div>-->
+        </div>
+
+    </div>
+</template>
+
+<template id="below-text">
+    <div class="newsList J_newsList pic-mixNewsList " id="newsList556"
+         _showsetting="1" newslisttype="2" scroll="0">
+        <div v-for="belowText in belowTexts">
+            <div topclassname="top1" topswitch="on" newsid="2" style="height: auto;">
+                <table id="lineBody2" cellpadding="0" cellspacing="0" class="J_lineBody lineBody">
+                    <tbody>
+                    <tr id="module556tr2">
+                        <td valign="top" class="J_newsTitle newsTitle mixNewsTitle" >
+                            <div newid="2" newsflag="8" class="J_articlePhotoBox articlePhotoBox " style="float: left;width: 18%;margin: 0 18px 0 0;">
+                                <!--height: 119px;-->
+                                <a target="_blank" class="J_articlePicHref articlePicLink2"
+                                    style="cursor: pointer;"><img alt="文章附图" title="" :src="belowText.image"
+                                               class="J_newsListPic newsPic newsListNewPic" @click="jumpHandle(belowText.toPage);"
+                                               style="width: 86%; "></a></div>
+                            <!--height: 119px;-->
+                            <div class="mixNewsStyleTitleContainer" style="float: left;">
+                                <div class="J_newsListTopFlag  newsListTopFlag2"><a target="_blank" class="no-mixNewsStyleTitleTip"></a>
+                                </div>
+                                <!--margin: 6px 0 0 728px;float: right;margin-right: 20px;-->
+                                <span class="mixNewsStyleDate fk-newsListDate" style="font-size: 16px;"
+                                      v-text="belowText.date"></span>
+                                <!--width: 877px; -->
+                                <a hidefocus="true" mix="1" class="J_mixNewsStyleTitle fk-newsListTitle mixNewsStyleTitle  pic-mixNewsStyleTitle font-titleShowCase"
+                                        style="font-size: 20px; line-height: 28px; font-weight: normal; cursor: pointer;" v-text="webVue.isEn ? belowText.title.en : belowText.title.cn"
+                                        @click="jumpHandle(belowText.toPage);"></a></div>
+                            <br><br>
+                            <p class="mixNewsStyleSummary fk-newsListSummary  pic-mixNewsStyleSummary "
+                               :style="'font-size: ' + (12 * heightRate) + 'px;margin: 10px;line-height: ' + (16 * heightRate) + 'px;width: 72%;'" v-text="webVue.isEn ? belowText.content.en : belowText.content.cn"></p></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="J_separatorLine separatorLine g_separator  pic-separatorLine " style="width: 92%;"></div>
+        </div>
+    </div>
+</template>
+
+<script>
+
+    $(document).ready(function () {
+        selectedNav('4');
+    });
+
+    Vue.component('my-banner', {
+        template: '#my-banner',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                banner: {},
+                bStyle: {}
+            }
+        },
+        methods: {
+            getBanner() {
+                this.$http.get('./data/showCase.json').then(res => {
+                    this.banner = res.body.banner;
+                    this.bStyle = {
+                        backgroundImage: "url(" + this.banner.image + ")",
+                        backgroundRepeat: "no-repeat",
+                        height: 200 * this.heightRate + 'px',
+                        backgroundPosition: "70% 70%",
+                        overflow: "hidden",
+                        display: "block",
+                        outline: "none",
+                        margin: "0px auto",
+                        position: "relative",
+                        zIndex: "1",
+                        backgroundSize: "cover"
+                    }
+                })
+            }
+        },
+        created() {
+            this.getBanner()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.banner;
+        }
+    })
+
+    Vue.component('left-image', {
+        template: '#left-image',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                leftImg: {},
+                imageShow: true,
+                nameShow: false,
+                videoShow: false,
+                swiper: null
+            }
+        },
+        computed: {},
+        methods: {
+            getLeftImg() {
+                this.$http.get('./data/showCase.json').then(res => {
+                    this.leftImg = res.body.leftImg;
+                    /*Vue.nextTick(() => {
+                        this.swiper = new Swiper('.swiper-container-video', {
+                            //spaceBetween: 30,
+                            centeredSlides: true,
+                            speed: 1000,
+                            loop: true,
+                            /!*autoplay: {
+                                delay: 20,
+                                disableOnInteraction: true,
+                            },*!/
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                                dynamicBullets: true,
+                                dynamicMainBullets: 2
+                            },
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+                        });
+                    })*/
+                })
+            }
+        },
+        created() {
+            this.getLeftImg()
+        },
+        mounted() {
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.leftImg;
+        }
+    })
+
+    Vue.component('right-text', {
+        template: '#right-text',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                rightTexts: []
+            }
+        },
+        computed: {},
+        methods: {
+            getRightText() {
+                this.$http.get('./data/showCase.json').then(res => {
+                    this.rightTexts = res.body.rightTexts;
+                })
+            }
+        },
+        created() {
+            this.getRightText()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.rightTexts;
+        }
+    })
+
+    Vue.component('below-text', {
+        template: '#below-text',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                belowTexts: []
+            }
+        },
+        computed: {},
+        methods: {
+            getBelowText() {
+                this.$http.get('./data/showCase.json').then(res => {
+                    this.belowTexts = res.body.belowTexts;
+                })
+            },
+            jumpHandle(page) {
+                // TODO 记录在页面中的当前位置，返回并跳转原处
+                jumpToPage(page + '.html');
+            }
+        },
+        created() {
+            this.getBelowText()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.belowTexts;
+        }
+    })
+
+    webVue = new Vue({
+        el: '#web',
+        data: {
+            widthRate: document.body.clientWidth / 1390,
+            heightRate: window.screen.availHeight / 728,
+            isPc: os.isPc,
+            isEn: isEn,
+            currPosition: null,
+            web_layout: {}
+        },
+        methods: {
+            getData: function () {
+                this.$http.get('./data/showCase.json').then(res => {
+                    this.currPosition = res.body.currPosition;
+                })
+                if (this.isPc) {
+                    this.web_layout = {
+                        top: '51px',
+                        width: '100%',
+                        /*background: 'rgb(179, 179, 181)'*/
+                    }
+                    /*let html = document.getElementsByTagName('html')[0];
+                    html.style.width = 1351 + 'px';*/
+                } else {
+                    this.web_layout = {
+                        top: '51px',
+                        width: '100%',
+                        /*background: 'rgb(179, 179, 181)',
+                        height: '1200px',*/
+                        overflow: 'scroll'
+                    }
+                }
+            }
+        },
+        created() {
+            this.getData();
+        }
+    });
+
+</script>
+</body>
+
+</html>

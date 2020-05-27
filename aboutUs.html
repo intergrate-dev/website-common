@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="__noGmain g_html" style="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="shortcut icon" href="data:;base64,=">
+    <meta name="description" content="">
+    <title>About Us</title>
+    <meta itemprop="name" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+
+    <link type="text/css" href="./css/siteBase2.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/base2.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/dist/module.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/component/swiper.min.css">
+    <link type="text/css" href="./css/fkTheme.min.css" rel="stylesheet">
+    <link id="sysnavlink" type="text/css" href="./css/fkNav.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/floatBtn1.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/jzcusstyle.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./js/jquery-core.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-mousewheel.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-core.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-parallax.min.js"></script>
+    <script type="text/javascript" src="./js/include.min.js"></script>
+    <script src="./js/juery-min.js"></script>
+    <script src="./component/layer/layer.js"></script>
+
+    <style type="text/css" id="styleWebSite">
+        /*#bannerV2 .fk-inBannerListZone {
+            width: 1200px;
+        }
+
+        #bannerV2 .fk-inBannerListZone {
+            margin-left: -600px;
+        }*/
+    </style>
+    <style type="text/css" id="styleBannerBg">
+        /*.webBannerTable {
+            background: none !important;
+        }
+
+        .webBanner {
+            background: none !important;
+        }*/
+    </style>
+    <style type="text/css" id="stylebacktotop">
+        /*.fk_siteBackToTop {
+            position: fixed;
+        }
+
+        .fk_siteBackToTop {
+            width: 50px;
+        }
+
+        .fk_siteBackToTop {
+            height: 50px;
+        }
+
+        .fk_siteBackToTop {
+            margin: 1px;
+            background-image: url(./images/common/toTop-1.png);
+        }*/
+
+        /*pop-up window start*/
+        .mask {
+            background-color: #000;
+            opacity: 0.3;
+            position: fixed;
+            top: 10%;
+            left: 0%;
+            width: 100%;
+            height: 80%;
+            z-index: 1
+        }
+
+        .pop {
+            /*background-color: rgba(255, 255, 255, 0.6);*/
+            background-color: rgb(227, 227, 227);
+            position: absolute;
+            top: 0px;
+            /*left: 100px;*/
+            /*width: calc(100% - 600px);
+            height:calc(100% - 200px);*/
+            text-align: left;
+            width: 265px;
+            height: 300px;
+            padding: 9px 5px 5px 5px;
+            z-index: 2
+        }
+
+        /*.multiLineText {
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-line-clamp: 18;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }*/
+        .btn {
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid blue;
+            padding: 4px 12px;
+        }
+
+        /*pop-up window end*/
+
+        /*.box {
+            padding: 20px;
+            background-color: #fff;
+            margin: 50px 100px;
+            border-radius: 5px;
+        }*/
+    </style>
+</head>
+
+<body style="">
+<div id="web" class="" :style="web_layout">
+    <!--header page-->
+    <include src="./header.html"></include>
+
+    <!--banner area-->
+    <div class="webBannerTable J_webBannerTable">
+        <div class="fk-moduleZoneWrap" style="background-color: white;">
+            <div id="webBanner" class="webBanner">
+                <div class="bannerTable">
+                    <div class="bannerLeft"></div>
+                    <div class="bannerCenter">
+                        <div style="visibility:hidden;" class="fk-inBannerListZone-tmp forms">
+                        </div>
+                        <div class="bannerTop"></div>
+                        <div id="bannerV2" class="banner extBanner" fbheight="300" defaultwidth="0"
+                             :style="'height: ' + (240 * heightRate) + 'px; background: none; overflow: hidden;'">
+                            <div class="imageSwitchShowName"><span class="spanHiddenName spanShowName"></span></div>
+                            <div class="imageSwitchBtnArea clearFix"
+                                 style="position: absolute; z-index: 3; display: none; width: 19px;"><a
+                                    class="imageSwitchBtn imageSwitchBtnSel"><span>1</span></a></div>
+                            <div></div>
+                            <div class="switchGroup switchGroup_bannerV2 "
+                                 :style="'width: 100%; position: relative; height: ' + (230 * heightRate) + 'px; overflow: hidden; margin: 0px auto;'">
+                                <div class="J_billboardItem numImg" id="numImg0"
+                                     style="position: absolute; width: 100%;">
+                                    <my-banner></my-banner>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bannerRight"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="absMiddleTable">
+        <div id="absForms" class="forms sideForms absForms">
+        </div>
+    </div>-->
+
+    <!--about us area-->
+    <!--class="form form541 formIndex1 formStyle109 fk-formFullmeasure " -->
+    <div id="fullmeasureTopForms"
+         class="fullmeasureContainer forms fk-fullmeasureForms fullmeasureForms fullmeasureTopForms"
+         style="background-color: white;">
+        <div id="module541" :style="'height: ' + (600 * heightRate) + 'px;'">
+            <div style="position: static;"
+                 class="fullmeasureOuterContentPage fullmeasureOuterContentPage1 J_fullmeasurePageShow" page="1">
+                <div class="fullmeasureOuterContent fullmeasureOuterContent541">
+                    <div class="fullmeasureContent fullmeasureContent541" id="fullmeasureContent541_1" moduleid="541"
+                         style="width: 85%;">
+                        <about-us></about-us>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="fullmeasureBottomForms" class="fullmeasureContainer forms fk-fullmeasureForms fullmeasureForms fullmeasureBottomForms">-->
+
+    <!--our team area-->
+    <!--margin-bottom: 40px;-->
+    <div id="module392" _indexclass="formIndex1" _moduletype="1" _modulestyle="109" _moduleid="392"
+         class="form form392 formIndex1 formStyle109 fk-formFullmeasure " title="" _sys="0" _banid=""
+         style="" _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+         _infullmeasurepack="0" _intabpack="0" _autoheight="0" _global="false" _independent="false"
+         data-scrollbar="0" fmslidestyle="0" fmpage="1" iscarousel="0" displaytime="4" carouselspeed="1"
+         cuscarousel="0">
+
+        <div style="position: static;"
+             class="fullmeasureOuterContentPage fullmeasureOuterContentPage1 J_fullmeasurePageShow" page="1">
+            <div class="fullmeasureOuterContentBg fullmeasureOuterContentBg392 fullmeasureStyle12"></div>
+            <div class="fullmeasureOuterContent fullmeasureOuterContent392">
+                <div class="fullmeasureContent fullmeasureContent392" id="fullmeasureContent392_1" moduleid="392" style="width: 77%;">
+                    <div class="fullmeasureContentBg fullmeasureContentBg392"></div>
+                    <div class="J_zoneEnableAll J_fullmeasurePackContent elemZone elemZoneModule fk-formPack"
+                         moduleid="392" id="fk-inFullmeasureListZone392-1">
+                        <div class="fk-elemZoneBg J_zoneContentBg"></div>
+                        <div id="module417" bannertitle="文本" _indexclass="" _moduletype="1" _modulestyle="86"
+                             _moduleid="417" class="form form417 formStyle86 siteEditor " title="" _sys="0"
+                             _banid="" style="width: 100%; text-align: center;"
+                             _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                             _infullmeasurepack="392" _intabpack="0" _autoheight="0" _global="false"
+                             _independent="false" data-scrollbar="0">
+                            <div class="lightModuleOuterContent lightModuleOuterContent417">
+                                <div class="fk-editor simpleText fk-editor-break-word" style="text-align: center;"><font color="#353535"><span
+                                        :style="'font-family: fontface__微软雅黑, Microsoft YaHei;font-size: ' + (23 * heightRate) + 'px;'" v-text="isEn ? 'Our Team' : '主要项目'"></span></font></div>
+                            </div>
+                        </div>
+                        <our-team></our-team>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfloat clearfloat392"></div>
+        </div>
+    </div>
+
+    <!--sponsor area-->
+    <div id="module416" _indexclass="formIndex4" _moduletype="1" _modulestyle="109" _moduleid="416"
+         class="form form416 formIndex4 formStyle109 fk-formFullmeasure " title="" _sys="0" _banid=""
+         :style="'height: ' + (384 * heightRate) + 'px;margin: -12% 0 0 0;'" _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0"
+         _inpack="0" _inpopupzone="0"
+         _infullmeasurepack="0" _intabpack="0" _autoheight="0" _global="false" _independent="false"
+         data-scrollbar="0" fmslidestyle="0" fmpage="1" iscarousel="0" displaytime="4" carouselspeed="1"
+         cuscarousel="0">
+        <div style="position: static;"
+             class="fullmeasureOuterContentPage fullmeasureOuterContentPage1 J_fullmeasurePageShow" page="1">
+            <div class="fullmeasureOuterContentBg fullmeasureOuterContentBg416 fullmeasureStyle12"></div>
+            <div class="fullmeasureOuterContent fullmeasureOuterContent416">
+                <div class="fullmeasureContent fullmeasureContent416" id="fullmeasureContent416_1" moduleid="416" style="width: 66%;">
+                    <div class="fullmeasureContentBg fullmeasureContentBg416"></div>
+                    <div class="J_zoneEnableAll J_fullmeasurePackContent elemZone elemZoneModule fk-formPack"
+                         moduleid="416" id="fk-inFullmeasureListZone416-1">
+                        <div class="fk-elemZoneBg J_zoneContentBg"></div>
+                        <!--333-->
+                        <div id="module434" bannertitle="文本" _indexclass="" _moduletype="1" _modulestyle="86"
+                             _moduleid="434" class="form form434 formStyle86 siteEditor " title="" _sys="0"
+                             _banid="" :style="'width: 100%;height: 20%;text-align: center;margin: ' + (80 * heightRate) + 'px 0 0 0;'" _side="0"
+                             _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                             _infullmeasurepack="416" _intabpack="0" _autoheight="0" _global="false"
+                             _independent="false" data-scrollbar="0">
+                            <!--<div class="lightModuleOuterContent lightModuleOuterContent434">
+                                <div class="fk-editor simpleText fk-editor-break-word  ">-->
+                            <span
+                                    :style="'color: rgb(53, 53, 53); font-size: ' + (23 * heightRate) + 'px;width: ' + (300 * heightRate) + 'px;'"><span
+                                    style="font-family: fontface__微软雅黑, Microsoft YaHei;" v-text="isEn ? 'Our Sponsors' : '赞助商'"></span></span>
+                            <!--</div>
+                        </div>-->
+                        </div>
+                        <our-sponsor></our-sponsor>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfloat clearfloat416"></div>
+        </div>
+    </div>
+
+    <div class="site_to_top" title="To Top" onclick="backToTop();"></div>
+
+    <!--footer page-->
+    <include src="./footer.html"></include>
+</div>
+
+<link rel="stylesheet" href="./js/component/horizontal-timeline/css/reset.css">
+<link rel="stylesheet" href="./js/component/horizontal-timeline/css/style.css">
+
+<script type="text/javascript" src="./js/component/swiper.min.js"></script>
+<script type="text/javascript" src="./js/component/vue-2.4.2.min.js"></script>
+<script type="text/javascript" src="./js/component/vue-resource-1.5.0.min.js"></script>
+<script src="./js/component/horizontal-timeline/js/modernizr.js"></script>
+<script src="js/component/horizontal-timeline/js/jquery-1.10.2-min.js"></script>
+<!--<script type="text/javascript" src="./js/require-2.3.6.js"></script>-->
+<script src="./js/component/horizontal-timeline/js/jquery.mobile.custom.min.js"></script>
+<script src="./js/component/horizontal-timeline/js/main.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+
+<template id="my-banner">
+    <div class="J_bannerItem f-bannerItem" title="" :style="bStyle">
+        <div id="fk-inBannerListZone-0" _sys="1"
+             _banid="AD0I98nwCRAEGAAggaHl7QUo3b6wrwIwgA84rAI" style="text-align: left;"
+             class="elemZone elemZoneModule fk-moduleZone fk-inBannerListZone forms sideForms J_moduleZone ">
+            <div class="fk-inBannerListZoneBg fk-elemZoneBg J_zoneContentBg elemZoneBg"></div>
+        </div>
+    </div>
+</template>
+
+<template id="about-us">
+    <div class="J_zoneEnableAll J_fullmeasurePackContent elemZone elemZoneModule fk-formPack"
+         moduleid="541" id="fk-inFullmeasureListZone541-1" :style="'margin: 0 0 0 ' + (-20*heightRate) + 'px;'">
+        <div class="fk-elemZoneBg J_zoneContentBg"></div>
+        <div id="module542" bannertitle="文本" _indexclass="" _moduletype="1" _modulestyle="86"
+             _moduleid="542" class="form form542 formStyle86 siteEditor " title="" _sys="0"
+             _banid="" :style="'margin: ' + (20 * heightRate) +'px 0 0px ' + (90 * widthRate) + 'px;'" _side="0" _intab="0"
+             _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0" _infullmeasurepack="541"
+             _intabpack="0" _autoheight="0" _global="false" _independent="false" data-scrollbar="0">
+            <div class="lightModuleOuterContent lightModuleOuterContent542">
+                <!--<div class="fk-editor simpleText"><span
+                        :style="'font-size: ' + (14 * heightRate) +'px;'" v-html="webVue.isEn ? currPosition.en : currPosition.cn"></span>
+                </div>-->
+            </div>
+        </div>
+
+        <!--split-line-->
+             <!--title="" _sys="0" _banid="" :style="'position:absolute;top:75px;left:8px;width: ' + (widthRate * 1400) + 'px;'" _side="0" _intab="0"-->
+        <div id="module543" bannertitle="图片" _indexclass="" _moduletype="1" _modulestyle="79" _moduleid="543"
+             class="form form543 formStyle79"
+             title="" _sys="0" _banid="" :style="'position:absolute;top:' + (60 * heightRate) +'px;left:' + (90 * widthRate) +'px;'" _side="0" _intab="0"
+             _inmulmcol="0" _infullmeasure="0"
+             _inpack="0" _inpopupzone="0" _infullmeasurepack="541" _intabpack="0" _autoheight="0" _global="false"
+             _independent="false" data-scrollbar="0">
+            <div class="lightModuleOuterContent lightModuleOuterContent543">
+                <div class="floatImg floatImg_J floatImg_J_special"><a hidefocus="true"
+                                                                       class="J_floatImg_jump f_floatImg_jump ">
+                    <div class="floatImgWrap">
+                        <div class="forMargin"><img id="float_img_543" :style="'width: ' + (widthRate * 1200) + 'px;'"
+                                                    class="J_img_lazyLoad float_in_img J_defImage loadingPlaceholderBackground"
+                                                    src="./images/common/split-line.png"
+                                                    alt="AD0I98nwCRAEGAAgqabl7QUo1r_1SDCwCTgB" data-imgloaded="true">
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <!--about CAE-->
+        <div id="sssss">
+            <div v-for="(aboutUs, index) in aboutUsList" :id="aboutUs.id">
+                <!--<div v-if='index % 2 == 0' :id="index">-->
+                    <!--<div bannertitle="img" :style="'position:absolute;top:' + (index * 440 + 120 * heightRate) + 'px;left: ' + (90 * widthRate) + 'px;width: 30%;'"-->
+                    <div bannertitle="img" :style="'left: 8%; top: ' + (index * 42 + 17) + '%;width: 30%;'"
+                         _indexclass="" _moduletype="1" _modulestyle="79" _moduleid="543" class="form form543 formStyle79"
+                         title="" _sys="0" _banid=""
+                         _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0"
+                         _inpopupzone="0" _infullmeasurepack="541"
+                         _intabpack="0" _autoheight="0" _global="false" _independent="false" data-scrollbar="0">
+                        <div class="lightModuleOuterContent lightModuleOuterContent543">
+                            <div class="floatImg floatImg_J floatImg_J_special"><a hidefocus="true"
+                                                                                   class="J_floatImg_jump f_floatImg_jump ">
+                                <div class="floatImgWrap">
+                                    <!--img height been based the height of right content -->
+                                    <div class="forMargin"><img :style="'width: 100%;max-height: ' + (204 * heightRate) + 'px;'"
+                                                                class="J_img_lazyLoad float_in_img J_defImage"
+                                                                data-original="" :src="aboutUs.image"
+                                                                alt="AD0I98nwCRAEGAAgqabl7QUo1r_1SDCwCTgB"
+                                                                data-imgloaded="true"></div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+
+                         <!--:style="'position: absolute; left: ' + (520 * widthRate) + 'px;top: ' + (440*index+170) + 'px; height: ' + (47 * heightRate) + 'px;'"-->
+                    <div id="module545" bannertitle="theme" _indexclass="" _moduletype="1" _modulestyle="86"
+                         _moduleid="545" class="form form545 formStyle86 siteEditor " title="" _sys="0"
+                         _banid="" :style="'left: 42%; top: ' + (index * 42 + 17) + '%;'"
+                         _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                         _infullmeasurepack="541" _intabpack="0" _autoheight="0" _global="false"
+                         _independent="false" data-scrollbar="0">
+                        <div class="lightModuleOuterContent lightModuleOuterContent545">
+                            <div class="fk-editor simpleText   "><font color="#353535"
+                                                                       face="思源宋体Heavy, fontface__思源宋体Heavy__16__1176749612397">
+                                <span :style="'color: rgb(53, 53, 53); font-size: ' + (23 * heightRate) + 'px;'" v-text="webVue.isEn ? aboutUs.theme.en : aboutUs.theme.cn"></span></font></div>
+                        </div>
+                    </div>
+                         <!--:style="'position: absolute; left: ' + (520 * widthRate) + 'px;top: ' + (440*index+260) + 'px; line-height: 28px;width: 55%;'"-->
+                    <div bannertitle="content" _indexclass="" _moduletype="1" _modulestyle="86"
+                         _moduleid="536" class="form form536 formStyle86 siteEditor " title="" _sys="0" _banid=""
+                         _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                         _infullmeasurepack="541" _intabpack="0" _autoheight="0" _global="false"
+                         :style="'left: 42%; top: ' + (index * 42 + 23) + '%;'"
+                         _independent="false" data-scrollbar="0">
+                        <div class="lightModuleOuterContent lightModuleOuterContent536">
+                            <div class="fk-editor simpleText">
+                                <!--<div><span style="font-family: fontface__思源宋体heavy__16__1176749612397; font-size: 36px;"></span></div>
+                                <div style="line-height: 30px;">
+                                    <div style="font-size: 14px;"></div>
+                                    <div style="color: rgb(102, 102, 102); font-size: 14px;"></div>
+                                </div>-->
+                                <span :style="'font-family: 微软雅黑, &quot;microsoft yahei&quot;; font-size: ' + (14 * heightRate) + 'px;line-height: ' + (19 * heightRate) + 'px;'" v-text="webVue.isEn ? aboutUs.content.en : aboutUs.content.cn"></span>
+                            </div>
+                        </div>
+                    </div>
+                <!--</div>-->
+
+                <!--change delay css-->
+                <!--<div v-if='index % 2 == 1' :id="index">
+
+                    <div id="module545" bannertitle="theme" _indexclass="" _moduletype="1" _modulestyle="86"
+                         _moduleid="545" class="form form545 formStyle86 siteEditor " title="" _sys="0"
+                         _banid="" :style="'position: absolute; left: '+ (90 * widthRate) + 'px;top: ' + (500 * heightRate) + 'px; height: 47px;'"
+                         _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                         _infullmeasurepack="541" _intabpack="0" _autoheight="0" _global="false"
+                         _independent="false" data-scrollbar="0">
+                        <div class="lightModuleOuterContent lightModuleOuterContent545">
+                            <div class="fk-editor simpleText   "><font color="#353535"
+                                                                       face="思源宋体Heavy, fontface__思源宋体Heavy__16__1176749612397">
+                                &lt;!&ndash;<span :style="'font-size: ' + (36 * heightRate) + 'px;'" v-text="aboutUs.theme"></span></font></div>&ndash;&gt;
+                                <span style="font-size: 36px;" v-text="aboutUs.theme"></span></font></div>
+                        </div>
+                    </div>
+
+                    <div bannertitle="content" _indexclass="" _moduletype="1" _modulestyle="86"
+                         _moduleid="536" class="form form536 formStyle86 siteEditor " title="" _sys="0" _banid=""
+                         :style="'position: absolute; left: '+ (90 * widthRate) + 'px; top: ' + (550 * heightRate) + 'px; width: 40%; line-height: 28px;'"
+                         _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                         _infullmeasurepack="541" _intabpack="0" _autoheight="0" _global="false"
+                         _independent="false" data-scrollbar="0">
+                        <div class="lightModuleOuterContent lightModuleOuterContent536">
+                            <div class="fk-editor simpleText">
+                                &lt;!&ndash;<div><span style="font-family: fontface__思源宋体heavy__16__1176749612397; font-size: 36px;"></span></div>
+                                <div style="line-height: 30px;">
+                                    <div style="font-size: 14px;"></div>
+                                    <div style="color: rgb(102, 102, 102); font-size: 14px;"></div>
+                                </div>&ndash;&gt;
+                                <span :style="'font-family: 微软雅黑, &quot;microsoft yahei&quot;; font-size: ' + ( 14 * heightRate) + 'px;'" v-html="aboutUs.content"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div bannertitle="img"
+                         :style="'position:absolute;top:' + (500 * heightRate) + 'px;left: ' + (690 * widthRate) + 'px;width: 30%;'"
+                         _indexclass="" _moduletype="1" _modulestyle="79" _moduleid="543" class="form form543 formStyle79"
+                         title="" _sys="0" _banid=""
+                         _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0"
+                         _infullmeasurepack="541"
+                         _intabpack="0" _autoheight="0" _global="false" _independent="false" data-scrollbar="0">
+                        <div class="lightModuleOuterContent lightModuleOuterContent543">
+                            <div class="floatImg floatImg_J floatImg_J_special"><a hidefocus="true"
+                                                                                   class="J_floatImg_jump f_floatImg_jump ">
+                                <div class="floatImgWrap">
+                                    &lt;!&ndash;img height been based the height of right content &ndash;&gt;
+                                    <div class="forMargin"><img class="J_img_lazyLoad float_in_img J_defImage"
+                                                                style="width: 100%;"
+                                                                data-original="" :src="aboutUs.image"
+                                                                alt="AD0I98nwCRAEGAAgqabl7QUo1r_1SDCwCTgB"
+                                                                data-imgloaded="true"></div>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>-->
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="our-team">
+    <!--<div :style="'margin: ' + (80 * heightRate) + 'px 0 ' + (140 * heightRate) + 'px 0px;height: ' + (500 * heightRate) + 'px;max-height: 680px;'">-->
+    <div :style="'margin: ' + (80 * heightRate) + 'px 0 ' + (140 * heightRate) + 'px 0px;'">
+        <!--<div id="teamShow" :style="'margin: ' + (100 * heightRate) + 'px 0 0 0;'">-->
+        <div id="teamShow">
+            <!--margin: 20px 30px 0 0;-->
+            <div class="" :style="xStyle"
+                 v-for="(ourTeam, index) in ourTeamList">
+                <!--:style="'position:absolute;top:' + (index*280 + 120) + 'px;left:60px;'" _side="0" _intab="0"-->
+                <div :id="ourTeam.id" bannertitle="图片" _indexclass="" _moduletype="1" _modulestyle="79"
+                     style="margin: 0 17.5px;"
+                     _moduleid="419" class="form form419 formStyle79" title="" _sys="0" _banid="" _side="0" _intab="0"
+                     _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0" _infullmeasurepack="392"
+                     _intabpack="0" _autoheight="0" _global="false" _independent="false" data-scrollbar="0">
+                    <div class="lightModuleOuterContent lightModuleOuterContent419">
+                        <div class="floatImg floatImg_J floatImg_J_special"><a hidefocus="true">
+                            <div class="floatImgWrap">
+                                <div class="forMargin">
+                                    <!--<div class="pop multiLineText" style="" v-show="isShow" @mouseout="showModal($event, 2)">
+                                        <div style="line-height: 17px;"><span
+                                                :style="'font-size: ' + (12 * heightRate) + 'px;'" v-text="ourTeam.detail"></span></div>
+                                    </div>-->
+                                    <!--<div class="pop multiLineText" style="" v-show="isShow" >
+                                        <div style="line-height: 17px;"><span
+                                                :style="'font-size: ' + (12 * heightRate) + 'px;'" v-text="ourTeam.detail"></span></div>
+                                    </div>-->
+
+                                         <!--:style="'width: ' + (265 * widthRate) + 'px; height: ' + (300 * heightRate) + 'px;cursor: pointer;'"-->
+                                         <!--:style="'width: 100%; height: ' + (300 * heightRate) + 'px;cursor: pointer;'"-->
+                                    <img id="float_img_419"
+                                         :style="'width: 90%;cursor: pointer;max-height: ' + (210 * heightRate) + 'px;'"
+                                         class="J_img_lazyLoad float_in_img J_defImage"
+                                         alt="AD0I98nwCRAEGAAgt6vl7QUojOyxpgQwnQI4owI"
+                                         :src="ourTeam.image" @click="showModal($event, ourTeam)" data-imgloaded="true">
+                                         <!--:src="ourTeam.image" @mouseenter="showModal($event, 0)" data-imgloaded="true">-->
+                                    <div class="fk-editor simpleText fk-editor-break-word" style="cursor: pointer;position: absolute;bottom:0px;height: 60px;
+                                        text-align: center;width: 90%;vertical-align: middle;background-color: rgba(245, 245, 245, 0.41);" @click="showModal($event, ourTeam)">
+                                        <span style="font-size: 23px;color: rgb(14, 14, 14);line-height: 32px;" v-text="webVue.isEn ? ourTeam.name.en : ourTeam.name.cn"></span><br/>
+                                        <span style="font-size: 16px;color: rgb(14, 14, 14);line-height: 20px;" v-text="webVue.isEn ? ourTeam.position.en : ourTeam.position.cn"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="our-sponsor">
+    <!-- margin: 150px 0 0 0-->
+    <div class="swiper-container-sponsor banner" style="background: none;">
+        <!--margin-left: -1059px;-->
+        <!--width: 2150px; -->
+        <div class="swiper-wrapper demo0 J_photoForms J_listPhotosMarquee" id="demo0436"
+             :style="'margin-left: ' + ((-130) * widthRate) + 'px;'">
+            <div class="swiper-slide" v-for="(sponsor, index) in sponsorList" :key="sponsor.id" photodisc=""
+                 photoname="" photoid="index"
+                 class="J_photoForm photoMarqueeForm"
+                 :style="'margin-right: ' + (30 * heightRate) + 'px; padding: 0px; margin-bottom: 0px; height: ' + (86 * heightRate) + 'px;'"
+                 faiwidth="165" faiheight="84">
+                <div class="insert_desc_warp_class">
+                    <!--width:170px;-->
+                    <div :id="sponsor.id"
+                         photoname="" photodisc="" check="3"
+                         tmppic="AD0I98nwCRAEGAAgjovl7QUoqIj_igUwpQE4VA"
+                         _lide="" class="J_listPhotoImg imgDiv"
+                         :style="'height: ' + (86 * heightRate) + 'px;'">
+                        <table cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <!--overflow: hidden;-->
+                                    <div class="J_photoImgPanel"
+                                         style="position: relative; ">
+                                        <a :href="'./sponsor-pdf.html?'+ dataPath + sponsor.link"><img
+                                                class="J_photoImg photoImg"
+                                                picsca="2"
+                                                :style="'margin-top: ' + ((-70) * heightRate) + 'px;'"
+                                                :src="sponsor.image"
+                                                iwidth="165" iheight="100"
+                                                alt="" title="">
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    $(document).ready(function () {
+        selectedNav('2');
+    });
+
+    Vue.component('my-banner', {
+        template: '#my-banner',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                banner: {},
+                bStyle: {}
+            }
+        },
+        methods: {
+            getBanner() {
+                this.$http.get('./data/aboutUs.json').then(res => {
+                    this.banner = res.body.banner;
+                    this.bStyle = {
+                        backgroundImage: "url(" + this.banner.image + ")",
+                        backgroundRepeat: "no-repeat",
+                        height: 200 * this.heightRate + 'px',
+                        backgroundPosition: "100% 100%",
+                        overflow: "hidden",
+                        display: "block",
+                        outline: "none",
+                        margin: "0px auto",
+                        position: "relative",
+                        zIndex: "1",
+                        backgroundSize: "cover"
+                    }
+                })
+            }
+        },
+        created() {
+            this.getBanner()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.banner;
+        }
+    })
+
+    Vue.component('about-us', {
+        template: '#about-us',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                currPosition: null,
+                aboutUsList: []
+            }
+        },
+        methods: {
+            getAboutList() {
+                this.$http.get('./data/aboutUs.json').then(res => {
+                    this.currPosition = res.body.currentPosition;
+                    this.aboutUsList = res.body.aboutUsList;
+                })
+            }
+        },
+        created() {
+            this.getAboutList()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.aboutUsList;
+        }
+    })
+
+    Vue.component('our-team', {
+        template: '#our-team',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                ourTeamList: [],
+                xStyle: {},
+                isPc: os.isPc,
+                isShow: false
+            }
+        },
+        methods: {
+            getOurTeams() {
+                this.$http.get('./data/aboutUs.json').then(res => {
+                    this.ourTeamList = res.body.ourTeamList;
+                    if(this.isPc){
+                        this.xStyle = {
+                            position: 'relative',
+                            float: 'left',
+                            width: '23%',
+                            height: (240 * this.heightRate) + 'px',
+                            margin: '0 2% 2% 0',
+                            /*margin: '0px ' + (50 * this.widthRate) +'px ' + (20 * this.heightRate) + 'px 0;'*/
+                        }
+                    } else {
+                        this.xStyle = {
+                            position: 'relative',
+                            float: 'left',
+                            width: '30%',
+                            height: (240 * this.heightRate) + 'px',
+                            margin: '0 2% 1% 0',
+                            /*margin: '0px ' + (50 * this.widthRate) +'px ' + (20 * this.heightRate) + 'px 0;'*/
+                        }
+                    }
+                    /*Vue.nextTick(() => {
+                        this.swiper = new Swiper('.swiper-container', {
+                            centeredSlides: true,
+                            speed: 5000,
+                            loop: true,
+                            breakpoints: {
+                            },
+                            autoplay: {
+                                delay: 60000,
+                                disableOnInteraction: true,
+                            }
+                        });
+                    })*/
+                })
+            },
+            showModal(e, team) {
+                let t = e.target;
+                //if (opt === 0) {
+                    /*let curr = $(t).parent();*/
+                    /*$($(curr).siblings('.mask')[0]).show();*/
+
+                    let curr = $(t);
+                    /*$('.pop').hide();*/
+                    //$($(curr).siblings('.pop')[0]).show();
+
+                    /*<div style="line-height: 17px;"><span :style="'font-size: ' + (12 * heightRate) + 'px;'" v-text="ourTeam.detail"></span></div>*/
+                    let text = (webVue.isEn ? team.detail.en : team.detail.cn) || (webVue.isEn ? 'No details' : '暂无介绍')
+                    let div_html = '\<\div style="line-height: ' + (22 * this.heightRate) + 'px;margin: 3%;font-size: '
+                        + (16 * this.heightRate) + 'px;">\<\span style="">' + text + '\<\/span>\<\/div>';
+                    layer.ready(function () {
+                        layer.open({
+                            type: 1,
+                            title: 'detail',
+                            /*maxmin: true,*/
+                            area: ['900px', '500px'],
+                            shadeClose: true, //点击遮罩关闭
+                            /*content: '\<\div style="padding:20px;">00000<\/div>'*/
+                            content: div_html
+                        });
+                    });
+                /*} else if (opt === 1) {
+                    $($(t).siblings('.pop')[0]).hide();
+                    $(t).hide();
+                } else {*/
+                    //$($(t).parent()).hide();
+                    /*$($($(t).parent()).siblings('.mask')[0]).hide();*/
+                    //$(t).hide();
+                    $('.pop').hide();
+                    /*$($(t).siblings('.mask')[0]).hide();*/
+                //}
+            }
+        },
+        created() {
+            this.getOurTeams()
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.ourTeams;
+        }
+    })
+
+    Vue.component('our-sponsor', {
+        template: '#our-sponsor',
+        data() {
+            return {
+                widthRate: document.body.clientWidth / 1390,
+                heightRate: window.screen.availHeight / 728,
+                sponsorList: [],
+                swiper: null,
+                dataPath: baseURL + "data/pdf/"
+            }
+        },
+        methods: {
+            getSponsorList() {
+                this.$http.get('./data/index.json').then(res => {
+                    this.sponsorList = res.body.sponsorList;
+                    Vue.nextTick(() => {
+                        //在这里，banners改变后所引起的swiper-slide重新循环渲染已经结束了，页面中已经有了多个图片了
+                        this.swiper = new Swiper('.swiper-container-sponsor', {
+                            //spaceBetween: 30,
+                            centeredSlides: true,
+                            speed: 6000,
+                            loop: true,
+                            breakpoints: {
+                                320: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 10
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 20
+                                },
+                                1280: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 30
+                                }
+                            },
+                            autoplay: {
+                                delay: 20,
+                                disableOnInteraction: true,
+                            },
+                            /*pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                                dynamicBullets: true,
+                                dynamicMainBullets: 2
+                            },*/
+                            /*navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },*/
+                        });
+                    })
+                })
+            }
+        },
+        created() {
+            this.getSponsorList()
+            delete this.swiper
+        },
+        mounted() {
+
+        },
+        beforeUpdate() {
+
+        },
+        updated() {
+
+        },
+        watch: {},
+        beforeDestroy() {
+            delete this.sponsorList
+        }
+    })
+
+    webVue = new Vue({
+        el: '#web',
+        data: {
+            widthRate: document.body.clientWidth / 1390,
+            heightRate: window.screen.availHeight / 728,
+            isPc: os.isPc,
+            isEn: isEn,
+            web_layout: {}
+        },
+        methods: {
+            getData: function () {
+                if (this.isPc) {
+                    this.web_layout = {
+                        top: '51px',
+                        width: '100%',
+                        /*background: 'rgb(179, 179, 181)'*/
+                    }
+                    /*let html = document.getElementsByTagName('html')[0];
+                    html.style.width = 1351 + 'px';*/
+                } else {
+                    this.web_layout = {
+                        top: '51px',
+                        width: '100%',
+                        /*background: 'rgb(179, 179, 181)',
+                        height: '1200px',*/
+                        overflow: 'scroll'
+                    }
+                }
+            }
+        },
+        created() {
+            this.getData();
+        }
+    })
+</script>
+</body>
+
+</html>

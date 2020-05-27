@@ -1,0 +1,202 @@
+{
+  "navigation": {
+    "en": [
+      {
+        "index": "index"
+      },
+      {
+        "aboutMe": "About CEA"
+      },
+      {
+        "majorPro": "Our Project"
+      },
+      {
+        "showCase": "ShowCase"
+      },
+      {
+        "activityMess": "What’s On"
+      },
+      {
+        "sponsors": "Our Sponsors"
+      }
+    ],
+    "zh": [
+      {
+        "index": "首页"
+      },
+      {
+        "aboutMe": "关于我们"
+      },
+      {
+        "majorPro": "主要项目"
+      },
+      {
+        "showCase": "活动展示"
+      },
+      {
+        "activityMess": "活动讯息"
+      },
+      {
+        "sponsors": "赞助商"
+      }
+    ]
+  },
+  "bannerList": [
+    {
+      "id": "b_001",
+      "title": "Share Now to Share the Future",
+      "image": "./images/one/banner01.jpg"
+    },
+    {
+      "id": "b_002",
+      "title": "China Night, 2020 TIFF",
+      "image": "./images/one/banner02.jpg"
+    },
+    {
+      "id": "b_003",
+      "title": "Join the CAE",
+      "image": "./images/one/banner03.jpg"
+    }
+  ],
+  "aboutUsList": [
+    {
+      "id": "us_001",
+      "name": "",
+      "image": "./images/one/us-1.jpg"
+    },
+    {
+      "id": "us_002",
+      "name": "",
+      "image": "./images/one/us-2.jpg"
+    },
+    {
+      "id": "us_003",
+      "name": "",
+      "image": "./images/one/us-3.jpg"
+    }
+  ],
+  "majorProjects": [
+    {
+      "id": "mp_001",
+      "name": "Cinema Exchange",
+      "image": "./images/one/movieComm.jpg"
+    },
+    {
+      "id": "mp_002",
+      "name": "Arts Exchange",
+      "image": "./images/one/artComm.jpg"
+    },
+    {
+      "id": "mp_003",
+      "name": "Educational Exchange",
+      "image": "./images/one/eduComm.jpg"
+    },
+    {
+      "id": "mp_004",
+      "name": "Exhibition&Conference",
+      "image": "./images/one/exhibitComm.jpg"
+    }
+  ],
+  "showCases": [
+    {
+      "id": "sa_001",
+      "year": "2020",
+      "content": "The Association will introduce more Chinese film companies, professionals and productions to the Toronto International Film Festival (TIFF) 2020. ",
+      "content_cn": "北美文化艺术交流协会将在2020多伦多电影节(TIFF)中向世界电影同行推介更多中国电影公司、电影人和电影作品，让我们拭目以待。"
+    },
+    {
+      "id": "sa_002",
+      "year": "2019",
+      "content": "In 2019, the Association participated the Toronto International Film Festival (TIFF) and was the first exhibitor presenting Chinese film companies in the Festival and successfully hosted the first Chinese Film Exhibition.<br/>A total of dozens of Chinese film companies participated in the exhibition, made connections with many peers and discussed about future collaborations.",
+      "content_cn": "2019年，与多伦多电影节合作，举办了首届中国电影展、行业论坛及晚会。数十家中国电影公司在协会的组织下集聚一堂，与来自世界各国业界同行进行深入交流，并共同探讨和展望未来的合作机会。"
+    },
+    {
+      "id": "sa_003",
+      "year": "2018",
+      "content": "In 2018, the association partnered with TIFF and presented Chinese film productions in promotion meeting and industry forum",
+      "content_cn": "2018年与多伦多电影节合作，举办中国电影推荐会及论坛。"
+    }
+  ],
+  "newsActiList": [
+    {
+      "id": "na_001",
+      "theme": "2019 news",
+      "theme_cn": "2019新闻报道",
+      "image": "./images/one/activity-news.jpg"
+    },
+    {
+      "id": "na_002",
+      "theme": "Media Room",
+      "theme_cn": "宣传片",
+      "image": "./images/one/activity-media.jpg"
+    },
+    {
+      "id": "na_003",
+      "theme": "2020 Schedule",
+      "theme_cn": "2020日程",
+      "image": "./images/one/activity-schedule.jpg"
+    }
+  ],
+  "sponsorList": [
+    {
+      "id": "na_001",
+      "name": "",
+      "image": "./images/one/sponsors/1.jpg",
+      "link": "sponsor-1.pdf"
+    },
+    {
+      "id": "na_002",
+      "name": "",
+      "image": "./images/one/sponsors/2.jpg",
+      "link": "sponsor-2.pdf"
+    },
+    {
+      "id": "na_003",
+      "name": "",
+      "image": "./images/one/sponsors/3.jpg",
+      "link": "sponsor-3.pdf"
+    },
+    {
+      "id": "na_004",
+      "name": "",
+      "image": "./images/one/sponsors/4.jpg",
+      "link": "sponsor-4.pdf"
+    },
+    {
+      "id": "na_005",
+      "name": "",
+      "image": "./images/one/sponsors/5.jpg",
+      "link": "sponsor-5.pdf"
+    },
+    {
+      "id": "na_006",
+      "name": "",
+      "image": "./images/one/sponsors/6.jpg",
+      "link": "sponsor-6.pdf"
+    },
+    {
+      "id": "na_007",
+      "name": "",
+      "image": "./images/one/sponsors/7.jpg",
+      "link": "sponsor-7.pdf"
+    },
+    {
+      "id": "na_008",
+      "name": "",
+      "image": "./images/one/sponsors/8.jpg",
+      "link": "sponsor-8.pdf"
+    },
+    {
+      "id": "na_009",
+      "name": "",
+      "image": "./images/one/sponsors/9.jpg",
+      "link": "sponsor-9.pdf"
+    },
+    {
+      "id": "na_010",
+      "name": "",
+      "image": "./images/one/sponsors/10.jpg",
+      "link": "sponsor-10.pdf"
+    }
+  ]
+}
