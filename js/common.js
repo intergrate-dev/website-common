@@ -1,6 +1,6 @@
 // var baseURL = "http://localhost:63342/common/static/";
 //var baseURL = "http://localhost:8080/common/";
-let baseURL = "http://localhost/common/", webVue = {}, showcaseComp = {},
+let baseURL = "http://localhost/website-common/", webVue = {}, showcaseComp = {},
     isEn = !localStorage.getItem("isEn") ? true : localStorage.getItem("isEn") === 'true';
 
 function jumpToPage(url) {

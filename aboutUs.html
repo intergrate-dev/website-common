@@ -13,12 +13,12 @@
     <meta http-equiv="expires" content="0"/>
 
     <link type="text/css" href="./css/siteBase2.min.css" rel="stylesheet">
-    <link type="text/css" href="./css/base2.min.css" rel="stylesheet">
+    <!--<link type="text/css" href="./css/base2.min.css" rel="stylesheet">-->
     <link type="text/css" href="./css/dist/module.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/component/swiper.min.css">
     <link type="text/css" href="./css/fkTheme.min.css" rel="stylesheet">
     <link id="sysnavlink" type="text/css" href="./css/fkNav.min.css" rel="stylesheet">
-    <link type="text/css" href="./css/floatBtn1.min.css" rel="stylesheet">
+    <!--<link type="text/css" href="./css/floatBtn1.min.css" rel="stylesheet">-->
     <link type="text/css" href="./css/jzcusstyle.css" rel="stylesheet">
 
     <script type="text/javascript" src="./js/jquery-core.min.js"></script>
@@ -296,9 +296,9 @@
              _inmulmcol="0" _infullmeasure="0" _inpack="0" _inpopupzone="0" _infullmeasurepack="541"
              _intabpack="0" _autoheight="0" _global="false" _independent="false" data-scrollbar="0">
             <div class="lightModuleOuterContent lightModuleOuterContent542">
-                <!--<div class="fk-editor simpleText"><span
-                        :style="'font-size: ' + (14 * heightRate) +'px;'" v-html="webVue.isEn ? currPosition.en : currPosition.cn"></span>
-                </div>-->
+                <div class="fk-editor simpleText"><span
+                        :style="'font-size: ' + (14 * heightRate) +'px;'" v-text="webVue.isEn ? currPosition.en : currPosition.cn"></span>
+                </div>
             </div>
         </div>
 
@@ -613,7 +613,7 @@
         methods: {
             getAboutList() {
                 this.$http.get('./data/aboutUs.json').then(res => {
-                    this.currPosition = res.body.currentPosition;
+                    this.currPosition = res.body.currPosition;
                     this.aboutUsList = res.body.aboutUsList;
                 })
             }
